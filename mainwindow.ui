@@ -1,0 +1,833 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1559</width>
+    <height>1075</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_2">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_3" stretch="0,0,0,0,0,0">
+        <property name="spacing">
+         <number>4</number>
+        </property>
+        <property name="sizeConstraint">
+         <enum>QLayout::SetDefaultConstraint</enum>
+        </property>
+        <property name="leftMargin">
+         <number>4</number>
+        </property>
+        <property name="rightMargin">
+         <number>4</number>
+        </property>
+        <item>
+         <widget class="QPushButton" name="homeBtn">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>333</width>
+            <height>54</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>SF Mono</family>
+            <pointsize>15</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+    background-color: #B9BEBF;
+    border-width: 0;
+    border-radius: 0;
+	color: #FFFFFF;
+	text-align: right;
+	padding-right: 10px;
+}
+QPushButton:pressed {
+	background-color: #20AFCE;
+}</string>
+          </property>
+          <property name="text">
+           <string>Home</string>
+          </property>
+          <property name="default">
+           <bool>false</bool>
+          </property>
+          <property name="flat">
+           <bool>false</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="guideBtn">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>333</width>
+            <height>54</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>SF Mono</family>
+            <pointsize>15</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+    background-color: #B9BEBF;
+    border-width: 0;
+    border-radius: 0;
+	color: #FFFFFF;
+	text-align: right;
+	padding-right: 10px;
+}
+QPushButton:pressed {
+	background-color: #20AFCE;
+}</string>
+          </property>
+          <property name="text">
+           <string>Guide</string>
+          </property>
+          <property name="default">
+           <bool>false</bool>
+          </property>
+          <property name="flat">
+           <bool>false</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="linkBtn">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>333</width>
+            <height>54</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>SF Mono</family>
+            <pointsize>15</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+    background-color: #B9BEBF;
+    border-width: 0;
+    border-radius: 0;
+	color: #FFFFFF;
+	text-align: right;
+	padding-right: 10px;
+}
+QPushButton:pressed {
+	background-color: #20AFCE;
+}</string>
+          </property>
+          <property name="text">
+           <string>University Links</string>
+          </property>
+          <property name="default">
+           <bool>false</bool>
+          </property>
+          <property name="flat">
+           <bool>false</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="abroadBtn">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>333</width>
+            <height>54</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>SF Mono</family>
+            <pointsize>15</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+    background-color: #B9BEBF;
+    border-width: 0;
+    border-radius: 0;
+	color: #FFFFFF;
+	text-align: right;
+	padding-right: 10px;
+}
+QPushButton:pressed {
+	background-color: #20AFCE;
+}</string>
+          </property>
+          <property name="text">
+           <string>Study Abroad</string>
+          </property>
+          <property name="default">
+           <bool>false</bool>
+          </property>
+          <property name="flat">
+           <bool>false</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="aboutBtn">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>54</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>SF Mono</family>
+            <pointsize>15</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+    background-color: #B9BEBF;
+    border-width: 0;
+    border-radius: 0;
+	color: #FFFFFF;
+	text-align: right;
+	padding-right: 10px;
+}
+QPushButton:pressed {
+	background-color: #20AFCE;
+}</string>
+          </property>
+          <property name="text">
+           <string>About</string>
+          </property>
+          <property name="default">
+           <bool>false</bool>
+          </property>
+          <property name="flat">
+           <bool>false</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="verticalSpacer">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QStackedWidget" name="stackedWidget">
+        <property name="styleSheet">
+         <string notr="true">QWidget#homePage {
+	background-color: #FFFFFF;
+}</string>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <widget class="QWidget" name="homePage">
+         <widget class="QLabel" name="label">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>20</y>
+            <width>661</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>SF Mono</family>
+            <pointsize>15</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>Find a University that is perfect for you.</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="bioBtn">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>90</y>
+            <width>131</width>
+            <height>51</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>SF Mono</family>
+            <pointsize>15</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+    background-color: #20AFCE;
+    border-width: 0;
+    border-radius: 0;
+	color: #FFFFFF;
+	text-align: center;
+}
+QPushButton:pressed {
+	background-color: #20AFCE;
+}</string>
+          </property>
+          <property name="text">
+           <string>Bio</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="ecoBtn">
+          <property name="geometry">
+           <rect>
+            <x>170</x>
+            <y>90</y>
+            <width>131</width>
+            <height>51</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>SF Mono</family>
+            <pointsize>15</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+    background-color: #B9BEBF;
+    border-width: 0;
+    border-radius: 0;
+	color: #FFFFFF;
+	text-align: center;
+}
+QPushButton:pressed {
+	background-color: #20AFCE;
+}</string>
+          </property>
+          <property name="text">
+           <string>Eco</string>
+          </property>
+         </widget>
+         <widget class="QStackedWidget" name="typed">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>190</y>
+            <width>1181</width>
+            <height>801</height>
+           </rect>
+          </property>
+          <widget class="QWidget" name="bioPage">
+           <widget class="QLineEdit" name="inp1">
+            <property name="geometry">
+             <rect>
+              <x>160</x>
+              <y>40</y>
+              <width>31</width>
+              <height>30</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLineEdit {
+border: none;
+border-bottom: 2px solid #000000;
+}</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_2">
+            <property name="geometry">
+             <rect>
+              <x>40</x>
+              <y>50</y>
+              <width>101</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <family>SF Mono</family>
+             </font>
+            </property>
+            <property name="text">
+             <string>Myanmar:</string>
+            </property>
+           </widget>
+           <widget class="QLineEdit" name="inp2">
+            <property name="geometry">
+             <rect>
+              <x>370</x>
+              <y>40</y>
+              <width>31</width>
+              <height>30</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLineEdit {
+border: none;
+border-bottom: 2px solid #000000;
+}</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_4">
+            <property name="geometry">
+             <rect>
+              <x>250</x>
+              <y>50</y>
+              <width>101</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <family>SF Mono</family>
+             </font>
+            </property>
+            <property name="text">
+             <string>English:</string>
+            </property>
+           </widget>
+           <widget class="QLineEdit" name="inp3">
+            <property name="geometry">
+             <rect>
+              <x>580</x>
+              <y>40</y>
+              <width>31</width>
+              <height>30</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLineEdit {
+border: none;
+border-bottom: 2px solid #000000;
+}</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_5">
+            <property name="geometry">
+             <rect>
+              <x>460</x>
+              <y>50</y>
+              <width>101</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <family>SF Mono</family>
+             </font>
+            </property>
+            <property name="text">
+             <string>Math :</string>
+            </property>
+           </widget>
+           <widget class="QLineEdit" name="inp4">
+            <property name="geometry">
+             <rect>
+              <x>580</x>
+              <y>90</y>
+              <width>31</width>
+              <height>30</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLineEdit {
+border: none;
+border-bottom: 2px solid #000000;
+}</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_6">
+            <property name="geometry">
+             <rect>
+              <x>250</x>
+              <y>100</y>
+              <width>111</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <family>SF Mono</family>
+             </font>
+            </property>
+            <property name="text">
+             <string>Chemistry:</string>
+            </property>
+           </widget>
+           <widget class="QLineEdit" name="inp5">
+            <property name="geometry">
+             <rect>
+              <x>160</x>
+              <y>90</y>
+              <width>31</width>
+              <height>30</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLineEdit {
+border: none;
+border-bottom: 2px solid #000000;
+}</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_7">
+            <property name="geometry">
+             <rect>
+              <x>40</x>
+              <y>100</y>
+              <width>101</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <family>SF Mono</family>
+             </font>
+            </property>
+            <property name="text">
+             <string>Physics:</string>
+            </property>
+           </widget>
+           <widget class="QLineEdit" name="inp6">
+            <property name="geometry">
+             <rect>
+              <x>370</x>
+              <y>90</y>
+              <width>31</width>
+              <height>30</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLineEdit {
+border: none;
+border-bottom: 2px solid #000000;
+}</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_8">
+            <property name="geometry">
+             <rect>
+              <x>460</x>
+              <y>100</y>
+              <width>101</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <family>SF Mono</family>
+             </font>
+            </property>
+            <property name="text">
+             <string>Biology :</string>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="searchBtn">
+            <property name="geometry">
+             <rect>
+              <x>40</x>
+              <y>220</y>
+              <width>131</width>
+              <height>51</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <family>SF Mono</family>
+              <pointsize>15</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+    background-color: #B9BEBF;
+    border-width: 0;
+    border-radius: 0;
+	color: #FFFFFF;
+	text-align: center;
+}
+QPushButton:pressed {
+	background-color: #20AFCE;
+}</string>
+            </property>
+            <property name="text">
+             <string>Search</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_9">
+            <property name="geometry">
+             <rect>
+              <x>40</x>
+              <y>280</y>
+              <width>77</width>
+              <height>22</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <family>SF Mono</family>
+             </font>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+           <widget class="QComboBox" name="comboBox">
+            <property name="geometry">
+             <rect>
+              <x>160</x>
+              <y>160</y>
+              <width>131</width>
+              <height>30</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <family>SF Mono</family>
+             </font>
+            </property>
+            <item>
+             <property name="text">
+              <string>None</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>IT</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Math</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Medicine</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Science</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Art</string>
+             </property>
+            </item>
+           </widget>
+           <widget class="QLabel" name="label_10">
+            <property name="geometry">
+             <rect>
+              <x>40</x>
+              <y>170</y>
+              <width>101</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <family>SF Mono</family>
+             </font>
+            </property>
+            <property name="text">
+             <string>Fields :</string>
+            </property>
+           </widget>
+           <widget class="QListWidget" name="listWidget">
+            <property name="geometry">
+             <rect>
+              <x>40</x>
+              <y>290</y>
+              <width>1141</width>
+              <height>511</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <family>SF Mono</family>
+              <pointsize>15</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QListView::item {
+	height: 60px;
+}</string>
+            </property>
+           </widget>
+          </widget>
+          <widget class="QWidget" name="ecoPage">
+           <widget class="QLabel" name="label_3">
+            <property name="geometry">
+             <rect>
+              <x>270</x>
+              <y>250</y>
+              <width>301</width>
+              <height>51</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <family>SF Mono</family>
+              <pointsize>15</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>This is Eco page</string>
+            </property>
+           </widget>
+          </widget>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="guidePage"/>
+        <widget class="QWidget" name="linkPage"/>
+        <widget class="QWidget" name="abroadPage">
+         <layout class="QHBoxLayout" name="horizontalLayout_3">
+          <item>
+           <widget class="QTextBrowser" name="textBrowser">
+            <property name="font">
+             <font>
+              <family>Padauk Book [SIL ]</family>
+              <pointsize>16</pointsize>
+             </font>
+            </property>
+            <property name="html">
+             <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Padauk Book [SIL ]'; font-size:16pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:10px; margin-bottom:0px; margin-left:10px; margin-right:10px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Scholar လျှောက်မယ်ဆို ဘာတွေ အရင် ပြင်ဆင်သင့်လဲ ??? &lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:10px; margin-right:10px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:10px; margin-right:10px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&amp;lt;1&amp;gt; Cover Letter&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:10px; margin-right:10px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&amp;lt;2&amp;gt; Scholar CV &lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:10px; margin-right:10px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&amp;lt;3&amp;gt; Application Form &lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:10px; margin-right:10px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&amp;lt;4&amp;gt; Academic transcript&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:10px; margin-right:10px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&amp;lt;5&amp;gt; English language proficiency tests IELTS,TOFEL, PTE(A) ,CPE, RMIT Test Result&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:10px; margin-right:10px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:10px; margin-right:10px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&amp;lt;1&amp;gt; Cover Letter&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:10px; margin-right:10px; -qt-block-indent:0; text-indent:0px;&quot;&gt;မိမိ ကိုယ်ကို မိတ်ဆတ်တဲ့ စာဖြစ်ပါတယ် &lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:10px; margin-right:10px; -qt-block-indent:0; text-indent:0px;&quot;&gt;စာအရေးအသားကို တိုတိုနဲ့ ရိုးရှင်းစွာရေးပါ &lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:10px; margin-right:10px; -qt-block-indent:0; text-indent:0px;&quot;&gt;တ မျက်နှာလောက်ဆို အိုကေပြီနော်&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:10px; margin-right:10px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:10px; margin-right:10px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&amp;lt;2&amp;gt; Scholar CV &lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:10px; margin-right:10px; -qt-block-indent:0; text-indent:0px;&quot;&gt;ကိုယ့်ရဲ့ ပညာရေး background ကို ပြည့်ပြည့်စုံစုံ ဖော်ပြရပါမယ် &lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:10px; margin-right:10px; -qt-block-indent:0; text-indent:0px;&quot;&gt;အလုပ် CV နဲ့ ခင်ဆင်ဆင်တူပေမယ့် Scholar အတွက်မှာတော့ Executive Summary ရေးကိုရေးရပါမယ်နော်&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:10px; margin-right:10px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:10px; margin-right:10px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&amp;lt;3&amp;gt; Application Form &lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:10px; margin-right:10px; -qt-block-indent:0; text-indent:0px;&quot;&gt;ဒါက တော့ မိမိလျှောက်လိုတဲ့ Scholar Program တွေမှာ ဖြည့်ရမယ့် Form ဖြစ်ပါတယ်။ ဒီ Form မှာ ဂရုပြုရမှာက ကိုယ်လျှောက်ချင်တဲ့ မေဂျာကို သေချာ ရေးထည့်ဖို့ပါပဲ&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:10px; margin-right:10px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:10px; margin-right:10px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&amp;lt;4&amp;gt; Academic transcript&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:10px; margin-right:10px; -qt-block-indent:0; text-indent:0px;&quot;&gt;ကိုယ်နောက်ဆုံး တတ်ခဲ့တဲ့Uni သို့ ကျောင်း က Official ထုတ်ပေးတဲ့ အမှတ်စာရင်းဖြစ်ရပါမယ်။&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:10px; margin-right:10px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:10px; margin-right:10px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&amp;lt;5&amp;gt; English language proficiency tests IELTS,TOFEL, PTE(A) ,CPE, RMIT Test Result&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:10px; margin-right:10px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:10px; margin-right:10px; -qt-block-indent:0; text-indent:0px;&quot;&gt;ဒါကတော့ Scholar ရဲ့ အသက်လို့တောင်ပြောလို့ရပါတယ်.အ ပေါ်က Eng Test တခုခုမှာ Registered လုပ်ပြီး ဖြေဆိုထားသင့်ပါတယ်။&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:10px; margin-right:10px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:10px; margin-right:10px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;Scholar လျှောက်ရာမှာ သတိပြုသင့်တဲ့ အချက် ၃ ချက်&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:10px; margin-right:10px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:10px; margin-right:10px; -qt-block-indent:0; text-indent:0px;&quot;&gt;ဒီတ ခေါက် တော့ ကျောင်းသားများအတွက် Scholar လျှောက်ထားရာမှာ အရေးကြီးတဲ့ အချက် ၃ ချက်ကို ဆွေးနွေးပေးလိုက်ပါတယ်။&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:10px; margin-right:10px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:10px; margin-right:10px; -qt-block-indent:0; text-indent:0px;&quot;&gt;1&amp;gt; Fully Funded ( or ) Partially Funded &lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:10px; margin-right:10px; -qt-block-indent:0; text-indent:0px;&quot;&gt;ကိုယ်လျှောက်မယ့် Scholar အမျိူးအစားကို Scholar ခေါ်တဲ့ ကျောင်းရဲ့ Benefits မှာ အရင် ကြည့်ရပါမယ်။&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:10px; margin-right:10px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:10px; margin-right:10px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Fully Funded ဆိုရင် ကိစ္စမရှိပေမယ့်.. Partially Funded ဆိုရင်တော့ ဒါဟာ Only Tuition Fee သို့ first academic year အတွက်ပဲ ပေးတာမျိူးပါ . Partially Funded ဆိုတဲ့အတိုင်း ကျောင်း နဲ့ မိမိနဲ့ တယောက်တဝက်ကျခံရမယ့် သဘောမျိူးဖြစ်ပါတယ်။&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:10px; margin-right:10px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:10px; margin-right:10px; -qt-block-indent:0; text-indent:0px;&quot;&gt;2&amp;gt; Motivation Letter &lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:10px; margin-right:10px; -qt-block-indent:0; text-indent:0px;&quot;&gt;ဒါက ခုနောက်ပိုင်း ခေါ်တဲ့ Scholarships တွေမှာ မပါမဖြစ်လို့တောင် ပြောလို့ရပါတယ် . တချို့က ဒါကို အရေးမကြီးဘူးထင်ပြီး နောက်ဆက်တွဲတင်တတ်ကြပါတယ် ။ တချို့က သေချာမရေးကြပါဘူး..အကဲဖြတ်အဖွဲ့ရဲ့အဓိက ထားပီးစစ်တဲ့ Letter ဖြစ်တဲ့အတွက် သေချာပြင်ဆင်ရေးသားကြဖို့ မှာချင်ပါတယ် ။&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:10px; margin-right:10px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:10px; margin-right:10px; -qt-block-indent:0; text-indent:0px;&quot;&gt;3&amp;gt; CSR Background &lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:10px; margin-right:10px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Corporate Social Responsibility ဆိုတဲ့ ပရဟိတ လူမှု အကျိုးပြု လုပ်ငန်းတွေမှာ ပါဝင် ထားခြင်းဟာ လည်း သင့်ကို Scholar တယောက်ဖြစ်စေဖို့ အများကြီး အထောက်အကူ ပြုပါတယ် ။ ဒါကြောင့် ကျောင်းသားများအနေနဲ့ ကုသိုလ်လည်းရ Scholar လည်း ရအောင် ခုတည်းက CSR တွေမှာ အားတတ်သရော ပါဝင် ထားကြဖို့လည်း တိုက်တွန်းလိုက်ပါတယ် ။&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:10px; margin-right:10px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:10px; margin-right:10px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:10px; margin-right:10px; -qt-block-indent:0; text-indent:0px;&quot;&gt;You can study about the scholar for more information in &lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:10px; margin-right:10px; -qt-block-indent:0; text-indent:0px;&quot;&gt;http://myanmarstudyabroad.org&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:10px; margin-right:10px; -qt-block-indent:0; text-indent:0px;&quot;&gt;http://scholarship-positions.com&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:10px; margin-right:10px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:10px; margin-right:10px; -qt-block-indent:0; text-indent:0px;&quot;&gt;If you would like to study abroad ,you can inquire like CROWN education ,EduLead Education Consultancy and so on.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="aboutPage"/>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1559</width>
+     <height>27</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
