@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1559</width>
-    <height>1075</height>
+    <width>1938</width>
+    <height>1066</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -366,9 +366,14 @@ QPushButton:pressed {
            <rect>
             <x>0</x>
             <y>190</y>
-            <width>1181</width>
+            <width>1561</width>
             <height>801</height>
            </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>SF Mono</family>
+           </font>
           </property>
           <widget class="QWidget" name="bioPage">
            <widget class="QLineEdit" name="inp1">
@@ -651,27 +656,17 @@ QPushButton:pressed {
             </item>
             <item>
              <property name="text">
-              <string>IT</string>
+              <string>Technology</string>
              </property>
             </item>
             <item>
              <property name="text">
-              <string>Math</string>
+              <string>Educational</string>
              </property>
             </item>
             <item>
              <property name="text">
-              <string>Medicine</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Science</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Art</string>
+              <string>Language</string>
              </property>
             </item>
            </widget>
@@ -698,7 +693,7 @@ QPushButton:pressed {
              <rect>
               <x>40</x>
               <y>290</y>
-              <width>1141</width>
+              <width>1471</width>
               <height>511</height>
              </rect>
             </property>
@@ -820,7 +815,7 @@ p, li { white-space: pre-wrap; }
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1559</width>
+     <width>1938</width>
      <height>27</height>
     </rect>
    </property>

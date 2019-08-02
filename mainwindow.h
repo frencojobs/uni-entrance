@@ -2,6 +2,7 @@
 #define MAINWINDOW_H
 
 #include <iostream>
+#include <math.h>
 #include <QMainWindow>
 #include <QSqlDatabase>
 #include <QSqlDriver>

@@ -2,7 +2,7 @@
 #include "ui_mainwindow.h"
 
 int arr[2] = {};
-int madeList[11] = {};
+int madeList[11][2];
 int mlc = 0;
 
 MainWindow::MainWindow(QWidget *parent) :
@@ -48,7 +48,7 @@ int* MainWindow::getBound(int i, int j)
 
 void MainWindow::searchData(int k)
 {
-    std::fill(madeList, madeList+11, 0);
+    std::fill(&madeList[0][0], &madeList[0][0]+sizeof(madeList), 0);
     ui->listWidget->clear();
     mlc = 0;
     bool success = false;
@@ -63,12 +63,14 @@ void MainWindow::searchData(int k)
        int se = query.value(3).toInt();
        int en = query.value(4).toInt();
 
-       int upperbound = getBound(se, en)[0];
-       int lowerbound = getBound(se, en)[1];
+       int upperbound = getBound(se, en)[0] + 2;
+       int lowerbound = getBound(se, en)[1] - 1;
+       int difference = upperbound - lowerbound;
 
        if(k >= lowerbound)
        {
-           madeList[mlc] = id;
+           madeList[mlc][0] = id;
+           madeList[mlc][1] = (k - lowerbound > difference) ? 100 : ceil((double(k - lowerbound)/(double)difference)*100.0);
            mlc++;
        }
 
@@ -181,13 +183,19 @@ void MainWindow::on_searchBtn_clicked()
             ui->inp5->text().toInt() +
             ui->inp6->text().toInt();
     searchData(total);
-    for (int i=0;i<11;i++) {
-        if(madeList[i] != 0){
-            QSqlQuery query("SELECT name FROM marks WHERE id = "+QString::number(madeList[i])+"");
-            query.first();
-            ui->listWidget->addItem(query.value(0).toString());
-//            qDebug() <<  << endl;
-            qDebug() << madeList[i];
+    for (int i=0;i<11;i++)
+    {
+        if(madeList[i][0] != 0)
+        {
+            QString order = "";
+            if(ui->comboBox->currentText() != "None") {
+                order = " AND field = '" + ui->comboBox->currentText() + "'";
+            }
+            QSqlQuery query("SELECT name,field FROM marks WHERE id = "+QString::number(madeList[i][0])+ order);
+            while(query.next())
+            {
+                ui->listWidget->addItem(QString::number(madeList[i][1]) + "%     " + query.value(0).toString() + " (" + query.value(1).toString() + ")");
+            }
         }
     }
 }
