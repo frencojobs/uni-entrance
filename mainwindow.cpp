@@ -2,7 +2,7 @@
 #include "ui_mainwindow.h"
 
 int arr[2] = {};
-int madeList[11][2];
+int madeList[12][2];
 int mlc = 0;
 bool isValid = true;
 
@@ -17,6 +17,7 @@ MainWindow::MainWindow(QWidget *parent) :
     showMaximized();
     updateStack();
     ui->errmsg->hide();
+    ui->errmsg_eco->hide();
     // example --
     ui->inp1->setText(QString::number(78));
     ui->inp2->setText(QString::number(75));
@@ -24,6 +25,12 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->inp4->setText(QString::number(88));
     ui->inp5->setText(QString::number(97));
     ui->inp6->setText(QString::number(88));
+    ui->inp1_eco->setText(QString::number(78));
+    ui->inp2_eco->setText(QString::number(75));
+    ui->inp3_eco->setText(QString::number(79));
+    ui->inp4_eco->setText(QString::number(88));
+    ui->inp5_eco->setText(QString::number(97));
+    ui->inp6_eco->setText(QString::number(88));
     //
 }
 
@@ -56,13 +63,15 @@ int* MainWindow::getBound(int i, int j)
     return arr;
 }
 
-void MainWindow::searchData(int k)
+void MainWindow::searchData(int k, int e)
 {
     std::fill(&madeList[0][0], &madeList[0][0]+sizeof(madeList), 0);
     ui->listWidget->clear();
+    ui->listWidget_eco->clear();
     mlc = 0;
     bool success = false;
     QSqlQuery query("SELECT * FROM marks");
+    //if(e == 1) QSqlQuery query("SELECT * FROM marks WHERE NOT field = 'Medicine'");
     if (!query.isValid())
     {
          qDebug() << "SQL error: "<< query.lastError().text() << endl;
@@ -98,11 +107,11 @@ QString MainWindow::colorcode(int c)
 
 void MainWindow::updateStack()
 {
-    const QString originalStyleSheet = "QPushButton {background-color: #B9BEBf;border-width: 0;border-radius: 0;color: #FFFFFF;text-align: right;padding-right: 10px;}QPushButton:pressed {background-color: #20AFCE;}";
+    const QString originalStyleSheet = "QPushButton {background-color: transparent;border-width: 2px;border-radius: 10px;color: #000000;text-align: left;padding: 10px 0 10px 25px;margin: 5px 15px 0 15px;}QPushButton:pressed {background-color: rgba(114, 133, 165, 0.43);}";
     switch(ui->stackedWidget->currentIndex())
     {
         case 0:
-        ui->homeBtn->setStyleSheet(originalStyleSheet+"QPushButton{background-color: #20AFCE;}");
+        ui->homeBtn->setStyleSheet(originalStyleSheet+"QPushButton{background-color: rgba(114, 133, 165, 0.43);}");
         ui->guideBtn->setStyleSheet(originalStyleSheet);
         ui->linkBtn->setStyleSheet(originalStyleSheet);
         ui->abroadBtn->setStyleSheet(originalStyleSheet);
@@ -110,7 +119,7 @@ void MainWindow::updateStack()
         break;
         case 1:
         ui->homeBtn->setStyleSheet(originalStyleSheet);
-        ui->guideBtn->setStyleSheet(originalStyleSheet+"QPushButton{background-color: #20AFCE;}");
+        ui->guideBtn->setStyleSheet(originalStyleSheet+"QPushButton{background-color: rgba(114, 133, 165, 0.43);}");
         ui->linkBtn->setStyleSheet(originalStyleSheet);
         ui->abroadBtn->setStyleSheet(originalStyleSheet);
         ui->aboutBtn->setStyleSheet(originalStyleSheet);
@@ -118,7 +127,7 @@ void MainWindow::updateStack()
         case 2:
         ui->homeBtn->setStyleSheet(originalStyleSheet);
         ui->guideBtn->setStyleSheet(originalStyleSheet);
-        ui->linkBtn->setStyleSheet(originalStyleSheet+"QPushButton{background-color: #20AFCE;}");
+        ui->linkBtn->setStyleSheet(originalStyleSheet+"QPushButton{background-color: rgba(114, 133, 165, 0.43);}");
         ui->abroadBtn->setStyleSheet(originalStyleSheet);
         ui->aboutBtn->setStyleSheet(originalStyleSheet);
         break;
@@ -126,7 +135,7 @@ void MainWindow::updateStack()
         ui->homeBtn->setStyleSheet(originalStyleSheet);
         ui->guideBtn->setStyleSheet(originalStyleSheet);
         ui->linkBtn->setStyleSheet(originalStyleSheet);
-        ui->abroadBtn->setStyleSheet(originalStyleSheet+"QPushButton{background-color: #20AFCE;}");
+        ui->abroadBtn->setStyleSheet(originalStyleSheet+"QPushButton{background-color: rgba(114, 133, 165, 0.43);}");
         ui->aboutBtn->setStyleSheet(originalStyleSheet);
         break;
         case 4:
@@ -134,7 +143,7 @@ void MainWindow::updateStack()
         ui->guideBtn->setStyleSheet(originalStyleSheet);
         ui->linkBtn->setStyleSheet(originalStyleSheet);
         ui->abroadBtn->setStyleSheet(originalStyleSheet);
-        ui->aboutBtn->setStyleSheet(originalStyleSheet+"QPushButton{background-color: #20AFCE;}");
+        ui->aboutBtn->setStyleSheet(originalStyleSheet+"QPushButton{background-color: rgba(114, 133, 165, 0.43);}");
         break;
     };
 }
@@ -176,17 +185,17 @@ void MainWindow::on_aboutBtn_clicked()
 
 void MainWindow::on_bioBtn_clicked()
 {
-    const QString originalStyleSheet = "QPushButton {background-color: #B9BEBF;border-width: 0;border-radius: 0;color: #FFFFFF;text-align: center;}QPushButton:pressed {background-color: #20AFCE;}";
-    ui->bioBtn->setStyleSheet(originalStyleSheet+"QPushButton{background-color: #20AFCE;}");
+    const QString originalStyleSheet = "QPushButton {background-color: #E0F4FD;border-width: 0;border-radius: 13px;color: #2BB7F3;;text-align: center;}QPushButton:pressed {background-color: #049BDC;color: #FFFFFF;}";
+    ui->bioBtn->setStyleSheet(originalStyleSheet+"QPushButton{background-color: #049BDC;color:#E0F4FD;}");
     ui->ecoBtn->setStyleSheet(originalStyleSheet);
     ui->typed->setCurrentIndex(0);
 }
 
 void MainWindow::on_ecoBtn_clicked()
 {
-    const QString originalStyleSheet = "QPushButton {background-color: #B9BEBF;border-width: 0;border-radius: 0;color: #FFFFFF;text-align: center;}QPushButton:pressed {background-color: #20AFCE;}";
+    const QString originalStyleSheet = "QPushButton {background-color: #E0F4FD;border-width: 0;border-radius: 13px;color: #2BB7F3;;text-align: center;}QPushButton:pressed {background-color: #049BDC;color: #FFFFFF;}";
     ui->bioBtn->setStyleSheet(originalStyleSheet);
-    ui->ecoBtn->setStyleSheet(originalStyleSheet+"QPushButton{background-color: #20AFCE;}");
+    ui->ecoBtn->setStyleSheet(originalStyleSheet+"QPushButton{background-color: #049BDC;color:#E0F4FD;}");
     ui->typed->setCurrentIndex(1);
 }
 
@@ -206,7 +215,7 @@ void MainWindow::on_searchBtn_clicked()
             validate(ui->inp5->text().toInt()) +
             validate(ui->inp6->text().toInt());
 
-    searchData(total);
+    searchData(total, 0);
 
     ui->totalmarks->clear();
 
@@ -233,7 +242,7 @@ void MainWindow::on_searchBtn_clicked()
                     QLabel* name_label = new QLabel(query.value(0).toString());
 
                     percent_label->setMargin(10);
-                    percent_label->setStyleSheet("QLabel { color: "+ colorcode(madeList[i][1]) +"}");
+                    percent_label->setStyleSheet("QLabel {font-family:'Source Code Pro';color: "+ colorcode(madeList[i][1]) +"}");
 
                     hbl->addWidget(percent_label);
                     hbl->addWidget(name_label);
@@ -253,6 +262,67 @@ void MainWindow::on_searchBtn_clicked()
     }
     else {
         ui->errmsg->show();
+    }
+    isValid = true;
+}
+
+void MainWindow::on_SearchBtn_eco_clicked()
+{
+    const int total =
+            validate(ui->inp1_eco->text().toInt()) +
+            validate(ui->inp2_eco->text().toInt()) +
+            validate(ui->inp3_eco->text().toInt()) +
+            validate(ui->inp4_eco->text().toInt()) +
+            validate(ui->inp5_eco->text().toInt()) +
+            validate(ui->inp6_eco->text().toInt());
+
+    searchData(total, 1);
+
+    ui->totalmarks_eco->clear();
+
+    if(isValid)
+    {
+        ui->totalmarks_eco->setText(QString::number(total));
+        ui->errmsg_eco->hide();
+        for (int i=0;i<11;i++)
+        {
+            if(madeList[i][0] != 0)
+            {
+                QString order = "";
+                if(ui->comboBox_eco->currentText() != "None")
+                {
+                    order = " AND field = '" + ui->comboBox_eco->currentText() + "'";
+                }
+                QSqlQuery query("SELECT name,field FROM marks WHERE id = "+QString::number(madeList[i][0])+ order);
+                while(query.next())
+                {
+                    QWidget* w = new QWidget();
+
+                    QHBoxLayout* hbl = new QHBoxLayout(w);
+                    QLabel* percent_label = new QLabel(QString::number(madeList[i][1]) + "%");
+                    QLabel* name_label = new QLabel(query.value(0).toString());
+
+                    percent_label->setMargin(10);
+                    percent_label->setStyleSheet("QLabel {font-family:'Source Code Pro';color: "+ colorcode(madeList[i][1]) +"}");
+
+                    hbl->addWidget(percent_label);
+                    hbl->addWidget(name_label);
+                    hbl->setSizeConstraint(QLayout::SetFixedSize);
+
+                    w->setLayout(hbl);
+
+                    QListWidgetItem* lwi = new QListWidgetItem;
+                    lwi->setSizeHint(w->sizeHint());
+                    ui->listWidget_eco->addItem(lwi);
+
+                    ui->listWidget_eco->setItemWidget(lwi, w);
+                    //ui->listWidget->addItem(QString::number(madeList[i][1]) + "%     " + query.value(0).toString() + " (" + query.value(1).toString() + ")");
+                }
+            }
+        }
+    }
+    else {
+        ui->errmsg_eco->show();
     }
     isValid = true;
 }

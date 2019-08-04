@@ -22,7 +22,7 @@ public:
     explicit MainWindow(QWidget *parent = nullptr);
     void updateStack();
     void connectdb(const QString&);
-    void searchData(int);
+    void searchData(int, int);
     int* getBound(int, int);
     int validate(int);
     QString colorcode(int);
@@ -37,6 +37,8 @@ private slots:
     void on_bioBtn_clicked();
     void on_ecoBtn_clicked();
     void on_searchBtn_clicked();
+
+    void on_SearchBtn_eco_clicked();
 
 private:
     Ui::MainWindow *ui;
