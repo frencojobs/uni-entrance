@@ -692,7 +692,7 @@ QPushButton:pressed {
             <property name="geometry">
              <rect>
               <x>40</x>
-              <y>290</y>
+              <y>360</y>
               <width>1471</width>
               <height>511</height>
              </rect>
@@ -707,6 +707,66 @@ QPushButton:pressed {
              <string notr="true">QListView::item {
 	height: 60px;
 }</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="errmsg">
+            <property name="geometry">
+             <rect>
+              <x>70</x>
+              <y>450</y>
+              <width>1181</width>
+              <height>41</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <family>SF Mono</family>
+              <pointsize>15</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLabel {
+	color: red;
+}</string>
+            </property>
+            <property name="text">
+             <string>Validation Error: Make sure the all the inputs are correct and appropriate!</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_11">
+            <property name="geometry">
+             <rect>
+              <x>40</x>
+              <y>320</y>
+              <width>101</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <family>SF Mono</family>
+             </font>
+            </property>
+            <property name="text">
+             <string>Total :</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="totalmarks">
+            <property name="geometry">
+             <rect>
+              <x>170</x>
+              <y>320</y>
+              <width>101</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <family>SF Mono</family>
+             </font>
+            </property>
+            <property name="text">
+             <string/>
             </property>
            </widget>
           </widget>

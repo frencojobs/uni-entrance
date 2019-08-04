@@ -24,6 +24,7 @@ public:
     void connectdb(const QString&);
     void searchData(int);
     int* getBound(int, int);
+    int validate(int);
     ~MainWindow();
 
 private slots:

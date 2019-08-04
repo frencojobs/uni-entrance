@@ -4,6 +4,7 @@
 int arr[2] = {};
 int madeList[11][2];
 int mlc = 0;
+bool isValid = true;
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -15,6 +16,7 @@ MainWindow::MainWindow(QWidget *parent) :
     setMinimumSize(1500, 1000);
     showMaximized();
     updateStack();
+    ui->errmsg->hide();
 }
 
 void MainWindow::connectdb(const QString& path)
@@ -173,29 +175,49 @@ void MainWindow::on_ecoBtn_clicked()
     ui->typed->setCurrentIndex(1);
 }
 
+int MainWindow::validate(int v)
+{
+    if(v < 40 || v > 100) isValid = false;
+    return v;
+}
+
 void MainWindow::on_searchBtn_clicked()
 {
     const int total =
-            ui->inp1->text().toInt() +
-            ui->inp2->text().toInt() +
-            ui->inp3->text().toInt() +
-            ui->inp4->text().toInt() +
-            ui->inp5->text().toInt() +
-            ui->inp6->text().toInt();
+            validate(ui->inp1->text().toInt()) +
+            validate(ui->inp2->text().toInt()) +
+            validate(ui->inp3->text().toInt()) +
+            validate(ui->inp4->text().toInt()) +
+            validate(ui->inp5->text().toInt()) +
+            validate(ui->inp6->text().toInt());
+
     searchData(total);
-    for (int i=0;i<11;i++)
+
+    ui->totalmarks->clear();
+
+    if(isValid)
     {
-        if(madeList[i][0] != 0)
+        ui->totalmarks->setText(QString::number(total));
+        ui->errmsg->hide();
+        for (int i=0;i<11;i++)
         {
-            QString order = "";
-            if(ui->comboBox->currentText() != "None") {
-                order = " AND field = '" + ui->comboBox->currentText() + "'";
-            }
-            QSqlQuery query("SELECT name,field FROM marks WHERE id = "+QString::number(madeList[i][0])+ order);
-            while(query.next())
+            if(madeList[i][0] != 0)
             {
-                ui->listWidget->addItem(QString::number(madeList[i][1]) + "%     " + query.value(0).toString() + " (" + query.value(1).toString() + ")");
+                QString order = "";
+                if(ui->comboBox->currentText() != "None")
+                {
+                    order = " AND field = '" + ui->comboBox->currentText() + "'";
+                }
+                QSqlQuery query("SELECT name,field FROM marks WHERE id = "+QString::number(madeList[i][0])+ order);
+                while(query.next())
+                {
+                    ui->listWidget->addItem(QString::number(madeList[i][1]) + "%     " + query.value(0).toString() + " (" + query.value(1).toString() + ")");
+                }
             }
         }
     }
+    else {
+        ui->errmsg->show();
+    }
+    isValid = true;
 }
