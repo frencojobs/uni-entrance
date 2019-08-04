@@ -17,6 +17,14 @@ MainWindow::MainWindow(QWidget *parent) :
     showMaximized();
     updateStack();
     ui->errmsg->hide();
+    // example --
+    ui->inp1->setText(QString::number(78));
+    ui->inp2->setText(QString::number(75));
+    ui->inp3->setText(QString::number(79));
+    ui->inp4->setText(QString::number(88));
+    ui->inp5->setText(QString::number(97));
+    ui->inp6->setText(QString::number(88));
+    //
 }
 
 void MainWindow::connectdb(const QString& path)
@@ -66,7 +74,7 @@ void MainWindow::searchData(int k)
        int en = query.value(4).toInt();
 
        int upperbound = getBound(se, en)[0] + 2;
-       int lowerbound = getBound(se, en)[1] - 1;
+       int lowerbound = getBound(se, en)[1];
        int difference = upperbound - lowerbound;
 
        if(k >= lowerbound)
@@ -79,6 +87,13 @@ void MainWindow::searchData(int k)
        //qDebug() << id << ":" << upperbound << ", " << lowerbound;
        success = true;
     }
+}
+
+QString MainWindow::colorcode(int c)
+{
+    if(c > 79) return "green";
+    else if(c > 39) return "orange";
+         else return "red";
 }
 
 void MainWindow::updateStack()
@@ -211,7 +226,27 @@ void MainWindow::on_searchBtn_clicked()
                 QSqlQuery query("SELECT name,field FROM marks WHERE id = "+QString::number(madeList[i][0])+ order);
                 while(query.next())
                 {
-                    ui->listWidget->addItem(QString::number(madeList[i][1]) + "%     " + query.value(0).toString() + " (" + query.value(1).toString() + ")");
+                    QWidget* w = new QWidget();
+
+                    QHBoxLayout* hbl = new QHBoxLayout(w);
+                    QLabel* percent_label = new QLabel(QString::number(madeList[i][1]) + "%");
+                    QLabel* name_label = new QLabel(query.value(0).toString());
+
+                    percent_label->setMargin(10);
+                    percent_label->setStyleSheet("QLabel { color: "+ colorcode(madeList[i][1]) +"}");
+
+                    hbl->addWidget(percent_label);
+                    hbl->addWidget(name_label);
+                    hbl->setSizeConstraint(QLayout::SetFixedSize);
+
+                    w->setLayout(hbl);
+
+                    QListWidgetItem* lwi = new QListWidgetItem;
+                    lwi->setSizeHint(w->sizeHint());
+                    ui->listWidget->addItem(lwi);
+
+                    ui->listWidget->setItemWidget(lwi, w);
+                    //ui->listWidget->addItem(QString::number(madeList[i][1]) + "%     " + query.value(0).toString() + " (" + query.value(1).toString() + ")");
                 }
             }
         }

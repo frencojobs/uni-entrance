@@ -25,6 +25,7 @@ public:
     void searchData(int);
     int* getBound(int, int);
     int validate(int);
+    QString colorcode(int);
     ~MainWindow();
 
 private slots:
