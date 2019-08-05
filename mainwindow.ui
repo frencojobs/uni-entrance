@@ -661,6 +661,26 @@ QPushButton:pressed {
             </item>
             <item>
              <property name="text">
+              <string>IT</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Medicine</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Agricultural</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Education</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
               <string>Technology</string>
              </property>
             </item>
@@ -671,7 +691,12 @@ QPushButton:pressed {
             </item>
             <item>
              <property name="text">
-              <string>Language</string>
+              <string>Languages</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Economics</string>
              </property>
             </item>
            </widget>
@@ -705,7 +730,7 @@ QPushButton:pressed {
             <property name="font">
              <font>
               <family>Space Grotesk</family>
-              <pointsize>15</pointsize>
+              <pointsize>16</pointsize>
              </font>
             </property>
             <property name="styleSheet">

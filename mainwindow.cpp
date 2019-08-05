@@ -10,7 +10,7 @@ MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
 {
-    connectdb("/home/frenco/marks.db");
+    connectdb("/home/frenco/ent.db");
     ui->setupUi(this);
     setWindowTitle("University Entrance Guide");
     setMinimumSize(1500, 1000);
@@ -241,8 +241,12 @@ void MainWindow::on_searchBtn_clicked()
                     QLabel* percent_label = new QLabel(QString::number(madeList[i][1]) + "%");
                     QLabel* name_label = new QLabel(query.value(0).toString());
 
-                    percent_label->setMargin(10);
+                    percent_label->setMargin(13);
                     percent_label->setStyleSheet("QLabel {font-family:'Source Code Pro';color: "+ colorcode(madeList[i][1]) +"}");
+
+                    QFont percent_label_font = percent_label->font();
+                    percent_label_font.setPointSize(16);
+                    percent_label->setFont(percent_label_font);
 
                     hbl->addWidget(percent_label);
                     hbl->addWidget(name_label);
@@ -302,7 +306,11 @@ void MainWindow::on_SearchBtn_eco_clicked()
                     QLabel* percent_label = new QLabel(QString::number(madeList[i][1]) + "%");
                     QLabel* name_label = new QLabel(query.value(0).toString());
 
-                    percent_label->setMargin(10);
+                    QFont percent_label_font = percent_label->font();
+                    percent_label_font.setPointSize(16);
+                    percent_label->setFont(percent_label_font);
+
+                    percent_label->setMargin(13);
                     percent_label->setStyleSheet("QLabel {font-family:'Source Code Pro';color: "+ colorcode(madeList[i][1]) +"}");
 
                     hbl->addWidget(percent_label);
