@@ -38,7 +38,7 @@
     <item>
      <layout class="QHBoxLayout" name="horizontalLayout">
       <item>
-       <layout class="QVBoxLayout" name="verticalLayout_3" stretch="0,0,0,0,0,0">
+       <layout class="QVBoxLayout" name="verticalLayout_3" stretch="0,0,0,0,0,0,0">
         <property name="spacing">
          <number>4</number>
         </property>
@@ -49,7 +49,7 @@
          <number>0</number>
         </property>
         <property name="topMargin">
-         <number>100</number>
+         <number>40</number>
         </property>
         <property name="rightMargin">
          <number>0</number>
@@ -57,6 +57,24 @@
         <property name="bottomMargin">
          <number>50</number>
         </property>
+        <item>
+         <widget class="QLabel" name="label">
+          <property name="font">
+           <font>
+            <family>Space Grotesk Bold</family>
+            <pointsize>20</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLabel {
+	padding-left: 130px;
+}</string>
+          </property>
+          <property name="text">
+           <string>UNI E G</string>
+          </property>
+         </widget>
+        </item>
         <item>
          <widget class="QPushButton" name="homeBtn">
           <property name="sizePolicy">
@@ -308,25 +326,6 @@ QPushButton:pressed {
          <number>0</number>
         </property>
         <widget class="QWidget" name="homePage">
-         <widget class="QLabel" name="label">
-          <property name="geometry">
-           <rect>
-            <x>40</x>
-            <y>30</y>
-            <width>661</width>
-            <height>31</height>
-           </rect>
-          </property>
-          <property name="font">
-           <font>
-            <family>Space Grotesk Bold</family>
-            <pointsize>20</pointsize>
-           </font>
-          </property>
-          <property name="text">
-           <string>Find a University</string>
-          </property>
-         </widget>
          <widget class="QPushButton" name="bioBtn">
           <property name="geometry">
            <rect>
@@ -362,7 +361,7 @@ QPushButton:pressed {
          <widget class="QStackedWidget" name="typed">
           <property name="geometry">
            <rect>
-            <x>0</x>
+            <x>10</x>
             <y>190</y>
             <width>1561</width>
             <height>801</height>
@@ -893,6 +892,21 @@ QListView::item:selected{
             </item>
             <item>
              <property name="text">
+              <string>IT</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Agricultural</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Education</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
               <string>Technology</string>
              </property>
             </item>
@@ -903,7 +917,12 @@ QListView::item:selected{
             </item>
             <item>
              <property name="text">
-              <string>Language</string>
+              <string>Languages</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Economics</string>
              </property>
             </item>
            </widget>
@@ -1231,9 +1250,85 @@ QPushButton:pressed {
            <string>Ecology</string>
           </property>
          </widget>
+         <widget class="QLabel" name="errmsg_2">
+          <property name="geometry">
+           <rect>
+            <x>40</x>
+            <y>30</y>
+            <width>1181</width>
+            <height>41</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Space Grotesk Bold</family>
+            <pointsize>19</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <property name="text">
+           <string>Find a University</string>
+          </property>
+         </widget>
         </widget>
-        <widget class="QWidget" name="guidePage"/>
-        <widget class="QWidget" name="linkPage"/>
+        <widget class="QWidget" name="guidePage">
+         <layout class="QVBoxLayout" name="verticalLayout_2">
+          <item>
+           <widget class="QTextBrowser" name="textBrowser_3">
+            <property name="font">
+             <font>
+              <family>Space Grotesk</family>
+              <pointsize>15</pointsize>
+             </font>
+            </property>
+            <property name="html">
+             <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;title&gt;How to use&lt;/title&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Space Grotesk'; font-size:15pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;h1 style=&quot; margin-top:18px; margin-bottom:12px; margin-left:15px; margin-right:15px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:xx-large; font-weight:600; color:#0099ff;&quot;&gt;How to Use&lt;/span&gt;&lt;span style=&quot; font-size:xx-large; font-weight:600;&quot;&gt; &lt;/span&gt;&lt;/h1&gt;
+&lt;h2 style=&quot; margin-top:16px; margin-bottom:12px; margin-left:15px; margin-right:15px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:x-large; font-weight:600; color:#0099ff;&quot;&gt;Purpose of this Application&lt;/span&gt;&lt;span style=&quot; font-size:x-large; font-weight:600;&quot;&gt; &lt;/span&gt;&lt;/h2&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:15px; margin-right:15px; -qt-block-indent:0; text-indent:0px;&quot;&gt;This application is applied for searching relevant universities according to the matriculation exam marks. it is designed depending on previous marks and it is for 2019-2020 academic year. &lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:15px; margin-right:15px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#cc1122;&quot;&gt;Assume that this application is only for searching most popular universities in Yangon and Mandalay.&lt;/span&gt; &lt;/p&gt;
+&lt;h2 style=&quot; margin-top:16px; margin-bottom:12px; margin-left:15px; margin-right:15px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:x-large; font-weight:600; color:#0099ff;&quot;&gt;User Manual&lt;/span&gt;&lt;span style=&quot; font-size:x-large; font-weight:600;&quot;&gt; &lt;/span&gt;&lt;/h2&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:15px; margin-right:15px; -qt-block-indent:0; text-indent:0px;&quot;&gt;When you access the home page, you can make a choice between subject combinations (Biology or Ecology). You need to access the valid marks to calculate the possibility of getting access to the respective universities depending on your marks. Else, you can also choose your desired field in field tab to filter the list of accessible universities if you want. &lt;/p&gt;
+&lt;h2 style=&quot; margin-top:16px; margin-bottom:12px; margin-left:15px; margin-right:15px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:x-large; font-weight:600; color:#0099ff;&quot;&gt;Calculation Methods&lt;/span&gt;&lt;span style=&quot; font-size:x-large; font-weight:600;&quot;&gt; &lt;/span&gt;&lt;/h2&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:15px; margin-right:15px; -qt-block-indent:0; text-indent:0px;&quot;&gt;The calculation method is constructed depending on previous two years' marks. &lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:15px; margin-right:15px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#cc1122;&quot;&gt;Assume that the method for calculating possibility of accessible universitiess is dependent on the different between your marks and the reference marks (Previous two years).&lt;/span&gt; &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="linkPage">
+         <layout class="QVBoxLayout" name="verticalLayout">
+          <item>
+           <widget class="QTextBrowser" name="textBrowser_2">
+            <property name="font">
+             <font>
+              <family>Space Grotesk</family>
+              <pointsize>15</pointsize>
+             </font>
+            </property>
+            <property name="html">
+             <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Space Grotesk'; font-size:15pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;University of Medicine 1: &lt;a href=&quot;http://www.um1ygn.edu.mm/en/home/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Here is the link&lt;/span&gt;&lt;/a&gt;&lt;br /&gt;University of Medicine 2: &lt;a href=&quot;http://www.um2ygn.edu.mm/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Here is the link &lt;/span&gt;&lt;/a&gt;&lt;br /&gt;Yangon Technology University: &lt;a href=&quot;https://ytu.edu.mm/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Here is the link&lt;/span&gt;&lt;/a&gt;&lt;br /&gt;Yangon University: &lt;a href=&quot;https://www.uy.edu.mm/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Here is the link&lt;/span&gt;&lt;/a&gt;&lt;br /&gt;Yangon University of Economics(Hlaing): &lt;a href=&quot;http://www.yueco.edu.mm/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Here is the link&lt;/span&gt;&lt;/a&gt;&lt;br /&gt;Yangon University of Foreign Languages: &lt;a href=&quot;https://www.yufl.edu.mm/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Here is the link&lt;/span&gt;&lt;/a&gt;&lt;br /&gt;Myanmar Maritime University: &lt;a href=&quot;http://www.mmu.edu.mm/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Here is the link&lt;/span&gt;&lt;/a&gt;&lt;br /&gt;University of Dental Medicine Yangon: &lt;a href=&quot;http://udmyangon-edu.com/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Here is the link&lt;/span&gt;&lt;/a&gt;&lt;br /&gt;National Management Degree College: &lt;a href=&quot;https://www.nmdc.edu.mm/en/&amp;gt;Here is the link&amp;lt;/a&amp;gt;&amp;lt;br&amp;gt; 
+
+University of Computer Studies,Yangon: &amp;lt;a href=&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Here is the link &lt;/span&gt;&lt;/a&gt;&lt;br /&gt;University of Medical Technology: &lt;a href=&quot;http://www.umty.gov.mm/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Here is the link&lt;/span&gt;&lt;/a&gt;&lt;br /&gt;Yangon University of Education: &lt;a href=&quot;http://www.yuoe.edu.mm/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Here is the Link&lt;/span&gt;&lt;/a&gt;&lt;br /&gt;Myanmar Mercantile Marine College: &lt;a href=&quot;http://www.mmmc.edu.mm/&amp;gt;Here is the link&amp;lt;/a&amp;gt;&amp;lt;br&amp;gt; 
+
+Myanmar Institute of Information Technology: &amp;lt;a href=&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Here is the Link&lt;/span&gt;&lt;/a&gt;&lt;br /&gt;Mandalay University: &lt;a href=&quot;http://www.mu.edu.mm/&amp;gt;Here is the link&amp;lt;/a&amp;gt;&amp;lt;br&amp;gt; 
+
+Mandalay University of Foreign Languages: &amp;lt;a href=&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Here is the link&lt;/span&gt;&lt;/a&gt;&lt;br /&gt;Yadanabon Cyber City: &lt;a href=&quot;http://utycc.moe.edu.mm/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Here is the link&lt;/span&gt;&lt;/a&gt;&lt;br /&gt;Mandalay Technology University: &lt;a href=&quot;http://mtu.moe.edu.mm/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Here is the link&lt;/span&gt;&lt;/a&gt;&lt;br /&gt;Myanmar Aerospace Engineering University: &lt;a href=&quot;http://maeu.edu.mm/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Here is the link&lt;/span&gt;&lt;/a&gt;&lt;br /&gt;University Of Computer Studies,Mandalay: &lt;a href=&quot;https://www.ucsm.edu.mm/ucsm/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Here is the link&lt;/span&gt;&lt;/a&gt;&lt;br /&gt;Yezin Agricultural University: &lt;a href=&quot;http://www.yau.edu.mm/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Here is the link&lt;/span&gt;&lt;/a&gt;&lt;br /&gt;University of Forestry,Yezin: &lt;a href=&quot;https://www.myanmar-edu.org/mueucap-university-forestry-yezin&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Here is the link&lt;/span&gt;&lt;/a&gt;&lt;br /&gt;University of Veterinary Science: &lt;a href=&quot;https://www.uvsyezin.edu.mm/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Here is the link&lt;/span&gt;&lt;/a&gt;&lt;br /&gt;Technological University(Mandalay): &lt;a href=&quot;https://mandalay.edu.mm&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Here is the link&lt;/span&gt;&lt;/a&gt;&lt;br /&gt;National University of Arts and Culture: &lt;a href=&quot;http://www.culture.gov.mm/Universities/NUAC_YGN/default.asp&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Here is the link&lt;/span&gt;&lt;/a&gt;&lt;br /&gt;University of Medicine(Magway): &lt;a href=&quot;http://www.ummg.gov.mm/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Here is the link&lt;/span&gt;&lt;/a&gt;&lt;br /&gt;University of Medicine(Taunggyi): &lt;a href=&quot;https://www.umtgi.org/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Here is the link&lt;/span&gt;&lt;/a&gt;&lt;br /&gt;University of Medicine(Mandalay): &lt;a href=&quot;http://www.ummdy.gov.mm/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Here is the link&lt;/span&gt;&lt;/a&gt;&lt;br /&gt;University of Dental Medicine,Mandalay: &lt;a href=&quot;http://udmmandalay.gov.mm/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Here is the link&lt;/span&gt;&lt;/a&gt;&lt;br /&gt;Co-operative University(Tha-ma-war-ya-ma,Thanlyin): &lt;a href=&quot;http://www.tcu.edu.mm/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Here is the Link&lt;/span&gt;&lt;/a&gt;&lt;br /&gt;Lacquerware Technology College(Bagan): &lt;a href=&quot;http://www.ltcbagan.com.mm/en/node/8&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Here is the link&lt;/span&gt;&lt;/a&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
         <widget class="QWidget" name="abroadPage">
          <layout class="QHBoxLayout" name="horizontalLayout_3">
           <item>
@@ -1296,13 +1391,86 @@ p, li { white-space: pre-wrap; }
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:10px; margin-right:10px; -qt-block-indent:0; text-indent:0px;&quot;&gt;http://myanmarstudyabroad.org&lt;/p&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:10px; margin-right:10px; -qt-block-indent:0; text-indent:0px;&quot;&gt;http://scholarship-positions.com&lt;/p&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:10px; margin-right:10px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:10px; margin-right:10px; -qt-block-indent:0; text-indent:0px;&quot;&gt;If you would like to study abroad ,you can inquire like CROWN education ,EduLead Education Consultancy and so on.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:10px; margin-right:10px; -qt-block-indent:0; text-indent:0px;&quot;&gt;If you would like to study abroad ,you can inquire like CROWN education ,EduLead Education Consultancy and so on.&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Study abraod Information Centre- &lt;a href=&quot;https://www.facebook.com/studyabroadmyanmar/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Here is the link.&lt;/span&gt;&lt;/a&gt;&lt;br /&gt;Crown Education - &lt;a href=&quot;https://www.facebook.com/crowneducation/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Here is the link.&lt;/span&gt;&lt;/a&gt;&lt;br /&gt;E &amp;amp; C Education Consultants - &lt;a href=&quot;https://www.facebook.com/EandCConsultants/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Here is the link.&lt;/span&gt;&lt;/a&gt;&lt;br /&gt;Connect University - &lt;a href=&quot;https://www.facebook.com/au.edu.mm/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Here is the link.&lt;/span&gt;&lt;/a&gt;&lt;br /&gt;Edu Link - &lt;a href=&quot;https://www.facebook.com/edulink.aus/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Here is the link.&lt;/span&gt;&lt;/a&gt;&lt;br /&gt;SR Worldwide Education Myanmar - &lt;a href=&quot;https://www.facebook.com/sr.worldwide.education/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Here is the link&lt;/span&gt;&lt;/a&gt;&lt;br /&gt;Regent Education - &lt;a href=&quot;https://www.facebook.com/Regent.Education.Myanmar/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Here is the link&lt;/span&gt;&lt;/a&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
             </property>
            </widget>
           </item>
          </layout>
         </widget>
-        <widget class="QWidget" name="aboutPage"/>
+        <widget class="QWidget" name="aboutPage">
+         <property name="styleSheet">
+          <string notr="true">QWidget {
+	background-color: #FFFFFF;
+}</string>
+         </property>
+         <widget class="QLabel" name="label_19">
+          <property name="geometry">
+           <rect>
+            <x>510</x>
+            <y>330</y>
+            <width>321</width>
+            <height>71</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Space Grotesk Bold</family>
+            <pointsize>15</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>UNI Entrance Guide</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_20">
+          <property name="geometry">
+           <rect>
+            <x>500</x>
+            <y>380</y>
+            <width>321</width>
+            <height>71</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Space Grotesk</family>
+            <pointsize>15</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>version 0.1.0</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_21">
+          <property name="geometry">
+           <rect>
+            <x>510</x>
+            <y>430</y>
+            <width>321</width>
+            <height>71</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Space Grotesk</family>
+            <pointsize>15</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>Made with ❤️ by 03 Team</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </widget>
        </widget>
       </item>
      </layout>

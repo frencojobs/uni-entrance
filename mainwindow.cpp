@@ -2,7 +2,7 @@
 #include "ui_mainwindow.h"
 
 int arr[2] = {};
-int madeList[12][2];
+int madeList[36][2];
 int mlc = 0;
 bool isValid = true;
 
@@ -70,8 +70,12 @@ void MainWindow::searchData(int k, int e)
     ui->listWidget_eco->clear();
     mlc = 0;
     bool success = false;
-    QSqlQuery query("SELECT * FROM marks");
-    //if(e == 1) QSqlQuery query("SELECT * FROM marks WHERE NOT field = 'Medicine'");
+    QSqlQuery query;
+    if(e == 1) query.prepare("SELECT * FROM marks WHERE NOT field = 'Medicine'");
+    else query.prepare("SELECT * FROM marks");
+
+    query.exec();
+
     if (!query.isValid())
     {
          qDebug() << "SQL error: "<< query.lastError().text() << endl;
@@ -79,8 +83,8 @@ void MainWindow::searchData(int k, int e)
     while (query.next())
     {
        int id = query.value(0).toInt();
-       int se = query.value(3).toInt();
-       int en = query.value(4).toInt();
+       int se = query.value(2).toInt();
+       int en = query.value(3).toInt();
 
        int upperbound = getBound(se, en)[0] + 2;
        int lowerbound = getBound(se, en)[1];
@@ -223,7 +227,7 @@ void MainWindow::on_searchBtn_clicked()
     {
         ui->totalmarks->setText(QString::number(total));
         ui->errmsg->hide();
-        for (int i=0;i<11;i++)
+        for (int i=0;i<36;i++)
         {
             if(madeList[i][0] != 0)
             {
@@ -288,7 +292,7 @@ void MainWindow::on_SearchBtn_eco_clicked()
     {
         ui->totalmarks_eco->setText(QString::number(total));
         ui->errmsg_eco->hide();
-        for (int i=0;i<11;i++)
+        for (int i=0;i<36;i++)
         {
             if(madeList[i][0] != 0)
             {
