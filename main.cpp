@@ -1,10 +1,10 @@
-#include "mainwindow.h"
+#include "entranceguide.h"
 #include <QApplication>
 
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
-    MainWindow w;
+    EntranceGuide w;
     w.show();
 
     return a.exec();
