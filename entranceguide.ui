@@ -14,11 +14,26 @@
    <string>EntranceGuide</string>
   </property>
   <widget class="QWidget" name="centralWidget">
+   <property name="autoFillBackground">
+    <bool>true</bool>
+   </property>
    <layout class="QGridLayout" name="gridLayout_2">
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
     <item row="0" column="0">
      <layout class="QGridLayout" name="gridLayout" columnstretch="1,4">
       <item row="0" column="0">
-       <layout class="QGridLayout" name="gridLayout_4">
+       <layout class="QGridLayout" name="sideBar">
         <property name="verticalSpacing">
          <number>0</number>
         </property>
@@ -34,6 +49,8 @@
            <font>
             <family>Space Grotesk</family>
             <pointsize>13</pointsize>
+            <weight>50</weight>
+            <bold>false</bold>
            </font>
           </property>
           <property name="text">
@@ -46,7 +63,13 @@
          </widget>
         </item>
         <item row="6" column="0">
-         <layout class="QHBoxLayout" name="horizontalLayout">
+         <layout class="QHBoxLayout" name="gender_radio">
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
           <item>
            <widget class="QPushButton" name="male_btn">
             <property name="font">
@@ -87,6 +110,8 @@
            <font>
             <family>Space Grotesk</family>
             <pointsize>13</pointsize>
+            <weight>50</weight>
+            <bold>false</bold>
            </font>
           </property>
           <property name="text">
@@ -139,6 +164,8 @@
            <font>
             <family>Space Grotesk</family>
             <pointsize>13</pointsize>
+            <weight>50</weight>
+            <bold>false</bold>
            </font>
           </property>
           <property name="text">
@@ -162,6 +189,8 @@
            <font>
             <family>Space Grotesk</family>
             <pointsize>13</pointsize>
+            <weight>50</weight>
+            <bold>false</bold>
            </font>
           </property>
           <property name="styleSheet">
@@ -230,6 +259,8 @@
            <font>
             <family>Space Grotesk</family>
             <pointsize>13</pointsize>
+            <weight>50</weight>
+            <bold>false</bold>
            </font>
           </property>
           <property name="text">
@@ -270,14 +301,32 @@
        </layout>
       </item>
       <item row="0" column="1">
-       <layout class="QGridLayout" name="gridLayout_3">
+       <layout class="QGridLayout" name="main">
         <item row="0" column="1">
          <widget class="QStackedWidget" name="stackedWidget">
+          <property name="autoFillBackground">
+           <bool>true</bool>
+          </property>
           <property name="currentIndex">
            <number>2</number>
           </property>
           <widget class="QWidget" name="homePage">
+           <property name="autoFillBackground">
+            <bool>true</bool>
+           </property>
            <layout class="QGridLayout" name="gridLayout_12">
+            <property name="leftMargin">
+             <number>0</number>
+            </property>
+            <property name="topMargin">
+             <number>0</number>
+            </property>
+            <property name="rightMargin">
+             <number>0</number>
+            </property>
+            <property name="bottomMargin">
+             <number>0</number>
+            </property>
             <item row="0" column="0">
              <layout class="QGridLayout" name="gridLayout_5">
               <property name="spacing">
@@ -290,22 +339,28 @@
                   <pointsize>11</pointsize>
                  </font>
                 </property>
+                <property name="autoFillBackground">
+                 <bool>true</bool>
+                </property>
                 <property name="widgetResizable">
                  <bool>true</bool>
                 </property>
                 <property name="alignment">
                  <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
                 </property>
-                <widget class="QWidget" name="scrollAreaWidgetContents_2">
+                <widget class="QWidget" name="scag">
                  <property name="geometry">
                   <rect>
                    <x>0</x>
                    <y>0</y>
-                   <width>903</width>
-                   <height>708</height>
+                   <width>943</width>
+                   <height>752</height>
                   </rect>
                  </property>
                  <layout class="QGridLayout" name="gridLayout_9" rowstretch="0,0,0">
+                  <property name="topMargin">
+                   <number>0</number>
+                  </property>
                   <item row="1" column="0">
                    <layout class="QHBoxLayout" name="horizontalLayout_3">
                     <item>
@@ -386,6 +441,18 @@
                     </property>
                     <widget class="QWidget" name="bioPage">
                      <layout class="QGridLayout" name="gridLayout_16">
+                      <property name="leftMargin">
+                       <number>0</number>
+                      </property>
+                      <property name="topMargin">
+                       <number>0</number>
+                      </property>
+                      <property name="rightMargin">
+                       <number>0</number>
+                      </property>
+                      <property name="bottomMargin">
+                       <number>0</number>
+                      </property>
                       <item row="2" column="0">
                        <widget class="QListWidget" name="main_listView">
                         <property name="font">
@@ -398,6 +465,9 @@
                       </item>
                       <item row="1" column="0">
                        <layout class="QGridLayout" name="gridLayout_14">
+                        <property name="spacing">
+                         <number>0</number>
+                        </property>
                         <item row="0" column="0">
                          <layout class="QGridLayout" name="gridLayout_15">
                           <item row="1" column="0">
@@ -1023,7 +1093,42 @@
             </item>
            </layout>
           </widget>
-          <widget class="QWidget" name="guidePage"/>
+          <widget class="QWidget" name="guidePage">
+           <layout class="QGridLayout" name="gridLayout_8">
+            <item row="0" column="0">
+             <widget class="QTextBrowser" name="textBrowser">
+              <property name="font">
+               <font>
+                <family>Space Grotesk</family>
+                <pointsize>13</pointsize>
+               </font>
+              </property>
+              <property name="html">
+               <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;title&gt;Guide&lt;/title&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Space Grotesk'; font-size:13pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;h2 style=&quot; margin-top:16px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:x-large; font-weight:600;&quot;&gt;How to Use &lt;/span&gt;&lt;/h2&gt;
+&lt;h4 style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:medium; font-weight:600;&quot;&gt;Purpose of the Application&lt;/span&gt;&lt;/h4&gt;
+&lt;ul style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;&quot;&gt;&lt;li style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Not only for matriculation students and high school students but also for the parents &lt;/li&gt;
+&lt;li style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;To search for relevant universities according to the matriculation exam marks &lt;/li&gt;
+&lt;li style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;for 2019-2020 academic year &lt;/li&gt;
+&lt;li style=&quot; margin-top:0px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;for searching most popular universities in Yangon and Mandalay &lt;/li&gt;&lt;/ul&gt;
+&lt;h4 style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:medium; font-weight:600;&quot;&gt;User Manual &lt;/span&gt;&lt;/h4&gt;
+&lt;ol style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;&quot;&gt;&lt;li style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;There is &amp;quot;&lt;span style=&quot; font-weight:600;&quot;&gt;Male&lt;/span&gt;&amp;quot; and &amp;quot;&lt;span style=&quot; font-weight:600;&quot;&gt;Female&lt;/span&gt;&amp;quot; buttons on the left margin to choose for gender. &lt;/li&gt;
+&lt;li style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;When you click &lt;span style=&quot; font-weight:600;&quot;&gt;Home&lt;/span&gt;,you can access to the home page and the two buttons: &lt;span style=&quot; font-weight:600;&quot;&gt;Biology&lt;/span&gt; and &lt;span style=&quot; font-weight:600;&quot;&gt;Ecology&lt;/span&gt; to select the subjects you had passed with. &lt;/li&gt;
+&lt;li style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;After you have clicked one of them,there will be &lt;span style=&quot; font-weight:600;&quot;&gt;six-subjects&lt;/span&gt; boxes for you to fill with your marks. &lt;/li&gt;
+&lt;li style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Click &lt;span style=&quot; font-weight:600;&quot;&gt;Search&lt;/span&gt; button to search for the respective universities that you would get into depending on your marks.(Note that you need to enter the valid marks) &lt;/li&gt;
+&lt;li style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;You can also choose your desired field in &lt;span style=&quot; font-weight:600;&quot;&gt;Fields&lt;/span&gt; tab to filter the list of accessible universities if you want. &lt;/li&gt;
+&lt;li style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;From the &lt;span style=&quot; font-weight:600;&quot;&gt;Universities&lt;/span&gt; tab,you can enter the websites of the universities and get to know more about the universities. &lt;/li&gt;
+&lt;li style=&quot; margin-top:0px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;If you are interested in applying scholarships and studying in aboard, just enter &lt;span style=&quot; font-weight:600;&quot;&gt;Study Aboard&lt;/span&gt; tab.The facts we mentioned will help you in applying scholarships. &lt;/li&gt;&lt;/ol&gt;
+&lt;h3 style=&quot; margin-top:14px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:large; font-weight:600;&quot;&gt;Calculation Methods &lt;/span&gt;&lt;/h3&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;The method we used in this application is built on previous two years' marks. Assume that the method for calculating possibility of accessible universities is dependent on the difference between your marks and the reference marks (Previous two years). &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
           <widget class="QWidget" name="linksPage">
            <layout class="QGridLayout" name="gridLayout_18">
             <item row="0" column="0">
@@ -1035,8 +1140,8 @@
                <property name="geometry">
                 <rect>
                  <x>0</x>
-                 <y>-362</y>
-                 <width>888</width>
+                 <y>0</y>
+                 <width>906</width>
                  <height>1081</height>
                 </rect>
                </property>
@@ -1123,7 +1228,7 @@
                   <item row="13" column="0">
                    <widget class="QLabel" name="label_14">
                     <property name="text">
-                     <string>Yadanabon Cyper City</string>
+                     <string>Yadanabon Cyber City</string>
                     </property>
                    </widget>
                   </item>
@@ -1443,8 +1548,161 @@
             </item>
            </layout>
           </widget>
-          <widget class="QWidget" name="abroadPage"/>
-          <widget class="QWidget" name="aboutPage"/>
+          <widget class="QWidget" name="abroadPage">
+           <layout class="QGridLayout" name="gridLayout_11">
+            <item row="0" column="0">
+             <widget class="QTextBrowser" name="textBrowser_2">
+              <property name="font">
+               <font>
+                <family>Space Grotesk</family>
+                <pointsize>13</pointsize>
+               </font>
+              </property>
+              <property name="html">
+               <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;title&gt;Study Abroad&lt;/title&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Space Grotesk'; font-size:13pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;h1 style=&quot; margin-top:18px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:xx-large; font-weight:600;&quot;&gt;What do you need to prepare first to apply scholarship?&lt;/span&gt;&lt;/h1&gt;
+&lt;ol style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;&quot;&gt;&lt;li style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a href=&quot;#C1&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Application Form&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a href=&quot;#C2&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Copy of passport/ID &lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a href=&quot;#C3&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Copies of transcripts/diplomas&lt;/span&gt;&lt;/a&gt; &lt;/li&gt;
+&lt;li style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a href=&quot;#C4&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Statement of purpose/Letter of motivation &lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a href=&quot;#C5&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Letter of recommendation&lt;/span&gt;&lt;/a&gt; &lt;/li&gt;
+&lt;li style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a href=&quot;#C6&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;CV/Resume&lt;/span&gt;&lt;/a&gt; &lt;/li&gt;
+&lt;li style=&quot; margin-top:0px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a href=&quot;#C7&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Standardized test scores(eg.IELTS scores)&lt;/span&gt;&lt;/a&gt; &lt;/li&gt;&lt;/ol&gt;
+&lt;h3 style=&quot; margin-top:14px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a name=&quot;C1&quot;&gt;&lt;/a&gt;&lt;span style=&quot; font-size:large; font-weight:600;&quot;&gt;1&lt;/span&gt;&lt;span style=&quot; font-size:large; font-weight:600;&quot;&gt;.Application Form&lt;/span&gt;&lt;/h3&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;You should check the application form carefully and fill accurately in all the sections of the application form correctly. &lt;/p&gt;
+&lt;h3 style=&quot; margin-top:14px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a name=&quot;C2&quot;&gt;&lt;/a&gt;&lt;span style=&quot; font-size:large; font-weight:600;&quot;&gt;2&lt;/span&gt;&lt;span style=&quot; font-size:large; font-weight:600;&quot;&gt;.Copy of passport/ID&lt;/span&gt;&lt;/h3&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;A copy of the main page of the passport, containing your photo and personal information is a need to apply for scholar. &lt;/p&gt;
+&lt;h3 style=&quot; margin-top:14px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a name=&quot;C3&quot;&gt;&lt;/a&gt;&lt;span style=&quot; font-size:large; font-weight:600;&quot;&gt;3&lt;/span&gt;&lt;span style=&quot; font-size:large; font-weight:600;&quot;&gt;. Copies of transcripts/diplomas&lt;/span&gt;&lt;/h3&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;A transcript is a document that have an official signature and stamp from your school or faculty. The transcript of records(all of your courses and grades, and credits that you have achieved for each course)from the last school you graduated or currently attending is required. &lt;/p&gt;
+&lt;h3 style=&quot; margin-top:14px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a name=&quot;C4&quot;&gt;&lt;/a&gt;&lt;span style=&quot; font-size:large; font-weight:600;&quot;&gt;4&lt;/span&gt;&lt;span style=&quot; font-size:large; font-weight:600;&quot;&gt;.Statement of purpose/Letter of motivation&lt;/span&gt;&lt;/h3&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;This statement should contain only one page in which you explain your reasons why you applied to the chosen degree course and how it relates to your future studies and career goals. In this statement/letter of motivation, it is important to be honest. You should also briefly present your qualities and how they would fit with the degree you selected. &lt;/p&gt;
+&lt;h3 style=&quot; margin-top:14px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a name=&quot;C5&quot;&gt;&lt;/a&gt;&lt;span style=&quot; font-size:large; font-weight:600;&quot;&gt;5&lt;/span&gt;&lt;span style=&quot; font-size:large; font-weight:600;&quot;&gt;.Letter of recommendation&lt;/span&gt;&lt;/h3&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;This letter contains recommendations about you from your teachers or lecturers or persons that supervised your work including volunteering. This letter will help a lot when the scholarship provider consider about your qualities, skills, intellectual capacity and it can also reflect your desire or motivation for the degree course and/or university you chose. &lt;/p&gt;
+&lt;h3 style=&quot; margin-top:14px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a name=&quot;C6&quot;&gt;&lt;/a&gt;&lt;span style=&quot; font-size:large; font-weight:600;&quot;&gt;6&lt;/span&gt;&lt;span style=&quot; font-size:large; font-weight:600;&quot;&gt;.CV/Resume&lt;/span&gt;&lt;/h3&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;This is the section in which you introduce about yourself and describe about all the education background you had. Remember to include all the languages that you know (including language certificates), but be honest about your proficiency level; add computer skills, volunteering work and any other courses that you completed (even short courses), especially if they are connected with your study field. &lt;/p&gt;
+&lt;h3 style=&quot; margin-top:14px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a name=&quot;C7&quot;&gt;&lt;/a&gt;&lt;span style=&quot; font-size:large; font-weight:600;&quot;&gt;7&lt;/span&gt;&lt;span style=&quot; font-size:large; font-weight:600;&quot;&gt;.Standardized test scores&lt;/span&gt;&lt;/h3&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;SAT, ACT, GRE, GPA and other test scores can be an important factor when the university considers who they give the scholarship to. Most often, high scores are the ones that count first and foremost. &lt;/p&gt;
+&lt;h2 style=&quot; margin-top:16px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:x-large; font-weight:600;&quot;&gt;Final tips before you send all the documents for the scholarship application&lt;/span&gt;&lt;/h2&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;1. Check your application form and all other documents for spelling and grammar errors before you send it.&lt;br /&gt;2. Do not exceed the word limit given for any section of the application or for any other documents you may be requested to write.&lt;br /&gt;3. Only submit the requested documentation and nothing more.&lt;br /&gt;4. It is recommended to make a complete copy of the application before you send it.&lt;br /&gt;5. Keep in mind the exact date you have to send all the requested documents and be careful not to miss the deadline.&lt;br /&gt;&lt;/p&gt;
+&lt;h4 style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:medium; font-weight:600;&quot;&gt;You can get more information about the scholar from the following websites:&lt;/span&gt;&lt;/h4&gt;
+&lt;ul style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;&quot;&gt;&lt;li style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;http://myanmarstudyabroad.org &lt;/li&gt;
+&lt;li style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;http://scholarship-positions.com &lt;/li&gt;
+&lt;li style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;http://www.scholars4dev.com/tag/scholarships-for-burmese/ &lt;/li&gt;
+&lt;li style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;https://www.scholarshipportal.com/scholarships/myanmar &lt;/li&gt;
+&lt;li style=&quot; margin-top:0px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;http://www.scholars4dev.com/tag/scholarships-for-burmese/ &lt;/li&gt;&lt;/ul&gt;
+&lt;h4 style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:medium; font-weight:600;&quot;&gt;If you'd like to consult about studying aboard ,you can inquire from the trustworthy famous education agencies like...&lt;/span&gt;&lt;/h4&gt;
+&lt;ul style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;&quot;&gt;&lt;li style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;CROWN Education(web:&amp;quot; http://www.crown-education.org/&amp;quot; ) &lt;/li&gt;
+&lt;li style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;EduLead Education Consultancy (web:&amp;quot; http://www.edulead.com/ &amp;quot;) &lt;/li&gt;
+&lt;li style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Fortrust Eduaction(web:&amp;quot; http://www.forturst.com/ &amp;quot;) &lt;/li&gt;
+&lt;li style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Lin High Power Education Services(web:&amp;quot; http://www.lhpmyanmar.com/ &amp;quot;) &lt;/li&gt;
+&lt;li style=&quot; margin-top:0px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;E&amp;amp;C Education Consultancy(web:&amp;quot; http://www.eandcmyanmar.com/ &amp;quot;) &lt;/li&gt;&lt;/ul&gt;&lt;/body&gt;&lt;/html&gt;</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="aboutPage">
+           <layout class="QGridLayout" name="gridLayout_21">
+            <item row="0" column="0">
+             <layout class="QGridLayout" name="gridLayout_13">
+              <item row="1" column="1">
+               <widget class="QLabel" name="label_45">
+                <property name="font">
+                 <font>
+                  <family>Source Code Pro</family>
+                  <pointsize>13</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>University Entrance Information System</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="1">
+               <spacer name="verticalSpacer_4">
+                <property name="orientation">
+                 <enum>Qt::Vertical</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>20</width>
+                  <height>40</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item row="2" column="1">
+               <widget class="QLabel" name="label_46">
+                <property name="font">
+                 <font>
+                  <family>Source Code Pro</family>
+                  <pointsize>13</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>Version 0.1.0</string>
+                </property>
+               </widget>
+              </item>
+              <item row="3" column="1">
+               <widget class="QLabel" name="label_47">
+                <property name="font">
+                 <font>
+                  <family>Source Code Pro</family>
+                  <pointsize>13</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>Made with ❤️ by Team NoError</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="2">
+               <spacer name="horizontalSpacer_2">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item row="1" column="0">
+               <spacer name="horizontalSpacer">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item row="4" column="1">
+               <spacer name="verticalSpacer_5">
+                <property name="orientation">
+                 <enum>Qt::Vertical</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>20</width>
+                  <height>40</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </widget>
          </widget>
         </item>
        </layout>

@@ -12,6 +12,7 @@
 #include <QSqlError>
 #include <QSqlQuery>
 #include <QDebug>
+#include <QFile>
 
 namespace Ui {
 class EntranceGuide;
@@ -31,6 +32,7 @@ public:
     QString colorcode(int);
     QString getMaxmark(int);
     QString getMinmark(int);
+    QString padded(QString);
     ~EntranceGuide();
 
 private slots:
@@ -56,7 +58,7 @@ private slots:
     void on_search_btn_clicked();
 
     void on_search_btn_eco_clicked();
-
+    // links
     void on_pushButton_clicked();
 
     void on_pushButton_2_clicked();
@@ -112,6 +114,7 @@ private slots:
     void on_pushButton_27_clicked();
 
     void on_pushButton_28_clicked();
+    // links end
 
 private:
     Ui::EntranceGuide *ui;

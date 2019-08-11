@@ -1,0 +1,40 @@
+#main, #stackedWidget, #homePage, #gridLayout_5, #scrollArea, #scag, QTextBrowser {
+    border: 0;
+}
+#centralWidget {
+    background-color: #F2F2F2;
+}
+#stackedWidget, #homePage, #scrollArea, #scag {
+    background-color: #FFFFFF;
+}
+
+#male_btn, #female_btn {
+    background-color: #F2F2F2;
+    color: #1976D2;
+    border: 0;
+    border-radius: 10px;
+    padding: 10px 15px;
+}
+#male_btn:pressed, #female_btn:pressed {
+    background-color: #1976D2;
+    color: #F2F2F2;
+}
+
+#home_btn, #guide_btn, #links_btn, #abroad_btn, #about_btn {
+    border: 0;
+    text-align: left;
+    padding: 15px 40px;
+}
+#title_label1, #main_title_label {
+    margin-top: 40px;
+}
+#title_label1, #title_label2, #title_label3, #title_label4 {
+    margin-left: 20px;
+}
+#gender_radio, #male_btn, #female_btn {
+    margin: 0 20px;
+}
+#gridLayout_6 > * {
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 13px;
+}

@@ -12,8 +12,12 @@ EntranceGuide::EntranceGuide(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::EntranceGuide)
 {
+    QFile File(":/styles/stylesheet.qss");
+    File.open(QFile::ReadOnly);
+    QString StyleSheet = QLatin1String(File.readAll());
     connectdb("/home/frenco/ent.db");
     ui->setupUi(this);
+    ui->centralWidget->setStyleSheet(StyleSheet);
     // example --
     ui->inp1->setText(QString::number(78));
     ui->inp2->setText(QString::number(75));
@@ -152,6 +156,16 @@ QString EntranceGuide::getMinmark(int t)
     return (se < en) ? QString::number(se) : QString::number(en);
 }
 
+QString EntranceGuide::padded(QString s)
+{
+    switch (s.length())
+    {
+        case 1: return "  " + s;
+        case 2: return " " + s;
+        default: return s;
+    }
+}
+
 void EntranceGuide::on_male_btn_clicked()
 {
     isMale = true;
@@ -235,7 +249,7 @@ void EntranceGuide::on_search_btn_clicked()
                     QHBoxLayout* mainHbl = new QHBoxLayout(mainWidget);
                     QHBoxLayout* firstHbl = new QHBoxLayout(firstWidet);
                     QHBoxLayout* secondHbl = new QHBoxLayout(secondWidget);
-                    QLabel* percent_label = new QLabel(QString::number(madeList[i][1]) + "%");
+                    QLabel* percent_label = new QLabel(padded(QString::number(madeList[i][1])) + "%");
                     QLabel* name_label = new QLabel(query.value(0).toString());
                     QLabel* upIcon = new QLabel();
                     QLabel* downIcon = new QLabel();
@@ -324,7 +338,7 @@ void EntranceGuide::on_search_btn_eco_clicked()
                     QHBoxLayout* mainHbl = new QHBoxLayout(mainWidget);
                     QHBoxLayout* firstHbl = new QHBoxLayout(firstWidet);
                     QHBoxLayout* secondHbl = new QHBoxLayout(secondWidget);
-                    QLabel* percent_label = new QLabel(QString::number(madeList[i][1]) + "%");
+                    QLabel* percent_label = new QLabel(padded(QString::number(madeList[i][1])) + "%");
                     QLabel* name_label = new QLabel(query.value(0).toString());
                     QLabel* upIcon = new QLabel();
                     QLabel* downIcon = new QLabel();

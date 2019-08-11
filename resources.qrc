@@ -8,4 +8,7 @@
         <file>icons_up.png</file>
         <file>icons_approval.png</file>
     </qresource>
+    <qresource prefix="/styles">
+        <file>stylesheet.qss</file>
+    </qresource>
 </RCC>
