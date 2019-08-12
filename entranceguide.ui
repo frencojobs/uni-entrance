@@ -443,7 +443,7 @@
                   <item row="2" column="0">
                    <widget class="QStackedWidget" name="inner_stackedWidget">
                     <property name="currentIndex">
-                     <number>1</number>
+                     <number>0</number>
                     </property>
                     <widget class="QWidget" name="bioPage">
                      <layout class="QGridLayout" name="gridLayout_16">
@@ -459,7 +459,7 @@
                       <property name="bottomMargin">
                        <number>0</number>
                       </property>
-                      <item row="2" column="0">
+                      <item row="3" column="0">
                        <widget class="QListWidget" name="main_listView">
                         <property name="font">
                          <font>
@@ -806,6 +806,19 @@
                         </item>
                        </layout>
                       </item>
+                      <item row="2" column="0">
+                       <widget class="QLabel" name="err_msg">
+                        <property name="font">
+                         <font>
+                          <family>Space Grotesk</family>
+                          <pointsize>15</pointsize>
+                         </font>
+                        </property>
+                        <property name="text">
+                         <string>Make sure your marks are between 40 and 100 !</string>
+                        </property>
+                       </widget>
+                      </item>
                      </layout>
                     </widget>
                     <widget class="QWidget" name="ecoPage">
@@ -1145,13 +1158,26 @@
                         </item>
                        </layout>
                       </item>
-                      <item row="1" column="0">
+                      <item row="2" column="0">
                        <widget class="QListWidget" name="main_listView_eco">
                         <property name="font">
                          <font>
                           <family>Space Grotesk</family>
                           <pointsize>14</pointsize>
                          </font>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="1" column="0">
+                       <widget class="QLabel" name="err_msg_eco">
+                        <property name="font">
+                         <font>
+                          <family>Space Grotesk</family>
+                          <pointsize>15</pointsize>
+                         </font>
+                        </property>
+                        <property name="text">
+                         <string>Make sure your marks are between 40 and 100 !</string>
                         </property>
                        </widget>
                       </item>
@@ -1215,53 +1241,14 @@ p, li { white-space: pre-wrap; }
                 <rect>
                  <x>0</x>
                  <y>0</y>
-                 <width>579</width>
-                 <height>1277</height>
+                 <width>586</width>
+                 <height>1322</height>
                 </rect>
                </property>
                <layout class="QGridLayout" name="gridLayout_7">
                 <item row="0" column="0">
                  <layout class="QGridLayout" name="gridLayout_6">
-                  <item row="8" column="0">
-                   <widget class="QLabel" name="label_9">
-                    <property name="font">
-                     <font>
-                      <family>Space Grotesk</family>
-                      <pointsize>13</pointsize>
-                     </font>
-                    </property>
-                    <property name="text">
-                     <string>National Management Degree College</string>
-                    </property>
-                   </widget>
-                  </item>
-                  <item row="3" column="1">
-                   <widget class="QPushButton" name="pushButton_4">
-                    <property name="font">
-                     <font>
-                      <family>Space Grotesk</family>
-                      <pointsize>13</pointsize>
-                     </font>
-                    </property>
-                    <property name="text">
-                     <string>Visit Link</string>
-                    </property>
-                   </widget>
-                  </item>
-                  <item row="11" column="1">
-                   <widget class="QPushButton" name="pushButton_12">
-                    <property name="font">
-                     <font>
-                      <family>Space Grotesk</family>
-                      <pointsize>13</pointsize>
-                     </font>
-                    </property>
-                    <property name="text">
-                     <string>Visit Link</string>
-                    </property>
-                   </widget>
-                  </item>
-                  <item row="14" column="0">
+                  <item row="15" column="0">
                    <widget class="QLabel" name="label_15">
                     <property name="font">
                      <font>
@@ -1274,358 +1261,7 @@ p, li { white-space: pre-wrap; }
                     </property>
                    </widget>
                   </item>
-                  <item row="10" column="0">
-                   <widget class="QLabel" name="label_11">
-                    <property name="font">
-                     <font>
-                      <family>Space Grotesk</family>
-                      <pointsize>13</pointsize>
-                     </font>
-                    </property>
-                    <property name="text">
-                     <string>Yangon University of Education</string>
-                    </property>
-                   </widget>
-                  </item>
-                  <item row="17" column="1">
-                   <widget class="QPushButton" name="pushButton_18">
-                    <property name="font">
-                     <font>
-                      <family>Space Grotesk</family>
-                      <pointsize>13</pointsize>
-                     </font>
-                    </property>
-                    <property name="text">
-                     <string>Visit Link</string>
-                    </property>
-                   </widget>
-                  </item>
-                  <item row="19" column="1">
-                   <widget class="QPushButton" name="pushButton_20">
-                    <property name="font">
-                     <font>
-                      <family>Space Grotesk</family>
-                      <pointsize>13</pointsize>
-                     </font>
-                    </property>
-                    <property name="text">
-                     <string>Visit Link</string>
-                    </property>
-                   </widget>
-                  </item>
-                  <item row="16" column="0">
-                   <widget class="QLabel" name="label_17">
-                    <property name="font">
-                     <font>
-                      <family>Space Grotesk</family>
-                      <pointsize>13</pointsize>
-                     </font>
-                    </property>
-                    <property name="text">
-                     <string>Univeristy of Computer Studies, Mandalay</string>
-                    </property>
-                   </widget>
-                  </item>
-                  <item row="6" column="1">
-                   <widget class="QPushButton" name="pushButton_7">
-                    <property name="font">
-                     <font>
-                      <family>Space Grotesk</family>
-                      <pointsize>13</pointsize>
-                     </font>
-                    </property>
-                    <property name="text">
-                     <string>Visit Link</string>
-                    </property>
-                   </widget>
-                  </item>
-                  <item row="7" column="0">
-                   <widget class="QLabel" name="label_8">
-                    <property name="font">
-                     <font>
-                      <family>Space Grotesk</family>
-                      <pointsize>13</pointsize>
-                     </font>
-                    </property>
-                    <property name="text">
-                     <string>University of Dental Medicne Yangon</string>
-                    </property>
-                   </widget>
-                  </item>
-                  <item row="23" column="0">
-                   <widget class="QLabel" name="label_40">
-                    <property name="font">
-                     <font>
-                      <family>Space Grotesk</family>
-                      <pointsize>13</pointsize>
-                     </font>
-                    </property>
-                    <property name="text">
-                     <string>University of Medicine (Taungyi)</string>
-                    </property>
-                   </widget>
-                  </item>
-                  <item row="13" column="0">
-                   <widget class="QLabel" name="label_14">
-                    <property name="font">
-                     <font>
-                      <family>Space Grotesk</family>
-                      <pointsize>13</pointsize>
-                     </font>
-                    </property>
-                    <property name="text">
-                     <string>Yadanabon Cyber City</string>
-                    </property>
-                   </widget>
-                  </item>
-                  <item row="21" column="0">
-                   <widget class="QLabel" name="label_38">
-                    <property name="font">
-                     <font>
-                      <family>Space Grotesk</family>
-                      <pointsize>13</pointsize>
-                     </font>
-                    </property>
-                    <property name="text">
-                     <string>National University of Arts and Culture</string>
-                    </property>
-                   </widget>
-                  </item>
-                  <item row="3" column="0">
-                   <widget class="QLabel" name="label_4">
-                    <property name="font">
-                     <font>
-                      <family>Space Grotesk</family>
-                      <pointsize>13</pointsize>
-                     </font>
-                    </property>
-                    <property name="text">
-                     <string>Yangon University</string>
-                    </property>
-                   </widget>
-                  </item>
-                  <item row="16" column="1">
-                   <widget class="QPushButton" name="pushButton_17">
-                    <property name="font">
-                     <font>
-                      <family>Space Grotesk</family>
-                      <pointsize>13</pointsize>
-                     </font>
-                    </property>
-                    <property name="text">
-                     <string>Visit Link</string>
-                    </property>
-                   </widget>
-                  </item>
-                  <item row="26" column="1">
-                   <widget class="QPushButton" name="pushButton_27">
-                    <property name="font">
-                     <font>
-                      <family>Space Grotesk</family>
-                      <pointsize>13</pointsize>
-                     </font>
-                    </property>
-                    <property name="text">
-                     <string>Visit Link</string>
-                    </property>
-                   </widget>
-                  </item>
-                  <item row="1" column="1">
-                   <widget class="QPushButton" name="pushButton_2">
-                    <property name="font">
-                     <font>
-                      <family>Space Grotesk</family>
-                      <pointsize>13</pointsize>
-                     </font>
-                    </property>
-                    <property name="text">
-                     <string>Visit Link</string>
-                    </property>
-                   </widget>
-                  </item>
-                  <item row="24" column="1">
-                   <widget class="QPushButton" name="pushButton_25">
-                    <property name="font">
-                     <font>
-                      <family>Space Grotesk</family>
-                      <pointsize>13</pointsize>
-                     </font>
-                    </property>
-                    <property name="text">
-                     <string>Visit Link</string>
-                    </property>
-                   </widget>
-                  </item>
-                  <item row="22" column="1">
-                   <widget class="QPushButton" name="pushButton_23">
-                    <property name="font">
-                     <font>
-                      <family>Space Grotesk</family>
-                      <pointsize>13</pointsize>
-                     </font>
-                    </property>
-                    <property name="text">
-                     <string>Visit Link</string>
-                    </property>
-                   </widget>
-                  </item>
-                  <item row="13" column="1">
-                   <widget class="QPushButton" name="pushButton_14">
-                    <property name="font">
-                     <font>
-                      <family>Space Grotesk</family>
-                      <pointsize>13</pointsize>
-                     </font>
-                    </property>
-                    <property name="text">
-                     <string>Visit LInk</string>
-                    </property>
-                   </widget>
-                  </item>
-                  <item row="4" column="0">
-                   <widget class="QLabel" name="label_5">
-                    <property name="font">
-                     <font>
-                      <family>Space Grotesk</family>
-                      <pointsize>13</pointsize>
-                     </font>
-                    </property>
-                    <property name="text">
-                     <string>Yangon University of Economics (Hlaing)</string>
-                    </property>
-                   </widget>
-                  </item>
-                  <item row="19" column="0">
-                   <widget class="QLabel" name="label_20">
-                    <property name="font">
-                     <font>
-                      <family>Space Grotesk</family>
-                      <pointsize>13</pointsize>
-                     </font>
-                    </property>
-                    <property name="text">
-                     <string>University of Veterinary Science</string>
-                    </property>
-                   </widget>
-                  </item>
-                  <item row="8" column="1">
-                   <widget class="QPushButton" name="pushButton_9">
-                    <property name="font">
-                     <font>
-                      <family>Space Grotesk</family>
-                      <pointsize>13</pointsize>
-                     </font>
-                    </property>
-                    <property name="text">
-                     <string>Visit Link</string>
-                    </property>
-                   </widget>
-                  </item>
-                  <item row="15" column="0">
-                   <widget class="QLabel" name="label_16">
-                    <property name="font">
-                     <font>
-                      <family>Space Grotesk</family>
-                      <pointsize>13</pointsize>
-                     </font>
-                    </property>
-                    <property name="text">
-                     <string>Myanmar Aerospace Engineering University</string>
-                    </property>
-                   </widget>
-                  </item>
-                  <item row="22" column="0">
-                   <widget class="QLabel" name="label_39">
-                    <property name="font">
-                     <font>
-                      <family>Space Grotesk</family>
-                      <pointsize>13</pointsize>
-                     </font>
-                    </property>
-                    <property name="text">
-                     <string>University of Medicine (Magway)</string>
-                    </property>
-                   </widget>
-                  </item>
-                  <item row="2" column="1">
-                   <widget class="QPushButton" name="pushButton_3">
-                    <property name="font">
-                     <font>
-                      <family>Space Grotesk</family>
-                      <pointsize>13</pointsize>
-                     </font>
-                    </property>
-                    <property name="text">
-                     <string>Visit Link</string>
-                    </property>
-                   </widget>
-                  </item>
-                  <item row="12" column="0">
-                   <widget class="QLabel" name="label_13">
-                    <property name="font">
-                     <font>
-                      <family>Space Grotesk</family>
-                      <pointsize>13</pointsize>
-                     </font>
-                    </property>
-                    <property name="text">
-                     <string>Mandalay University</string>
-                    </property>
-                   </widget>
-                  </item>
-                  <item row="7" column="1">
-                   <widget class="QPushButton" name="pushButton_8">
-                    <property name="font">
-                     <font>
-                      <family>Space Grotesk</family>
-                      <pointsize>13</pointsize>
-                     </font>
-                    </property>
-                    <property name="text">
-                     <string>Visit Link</string>
-                    </property>
-                   </widget>
-                  </item>
-                  <item row="25" column="1">
-                   <widget class="QPushButton" name="pushButton_26">
-                    <property name="font">
-                     <font>
-                      <family>Space Grotesk</family>
-                      <pointsize>13</pointsize>
-                     </font>
-                    </property>
-                    <property name="text">
-                     <string>Visit Link</string>
-                    </property>
-                   </widget>
-                  </item>
-                  <item row="5" column="1">
-                   <widget class="QPushButton" name="pushButton_6">
-                    <property name="font">
-                     <font>
-                      <family>Space Grotesk</family>
-                      <pointsize>13</pointsize>
-                     </font>
-                    </property>
-                    <property name="text">
-                     <string>Visit Link</string>
-                    </property>
-                   </widget>
-                  </item>
-                  <item row="4" column="1">
-                   <widget class="QPushButton" name="pushButton_5">
-                    <property name="font">
-                     <font>
-                      <family>Space Grotesk</family>
-                      <pointsize>13</pointsize>
-                     </font>
-                    </property>
-                    <property name="text">
-                     <string>Visit Link</string>
-                    </property>
-                   </widget>
-                  </item>
-                  <item row="14" column="1">
+                  <item row="15" column="2">
                    <widget class="QPushButton" name="pushButton_15">
                     <property name="font">
                      <font>
@@ -1638,21 +1274,8 @@ p, li { white-space: pre-wrap; }
                     </property>
                    </widget>
                   </item>
-                  <item row="10" column="1">
-                   <widget class="QPushButton" name="pushButton_11">
-                    <property name="font">
-                     <font>
-                      <family>Space Grotesk</family>
-                      <pointsize>13</pointsize>
-                     </font>
-                    </property>
-                    <property name="text">
-                     <string>Visit Link</string>
-                    </property>
-                   </widget>
-                  </item>
                   <item row="11" column="0">
-                   <widget class="QLabel" name="label_12">
+                   <widget class="QLabel" name="label_11">
                     <property name="font">
                      <font>
                       <family>Space Grotesk</family>
@@ -1660,245 +1283,11 @@ p, li { white-space: pre-wrap; }
                      </font>
                     </property>
                     <property name="text">
-                     <string>Myanmar Mercantile Marine Colllege</string>
+                     <string>Yangon University of Education</string>
                     </property>
                    </widget>
                   </item>
-                  <item row="9" column="1">
-                   <widget class="QPushButton" name="pushButton_10">
-                    <property name="font">
-                     <font>
-                      <family>Space Grotesk</family>
-                      <pointsize>13</pointsize>
-                     </font>
-                    </property>
-                    <property name="text">
-                     <string>Visit Link</string>
-                    </property>
-                   </widget>
-                  </item>
-                  <item row="21" column="1">
-                   <widget class="QPushButton" name="pushButton_22">
-                    <property name="font">
-                     <font>
-                      <family>Space Grotesk</family>
-                      <pointsize>13</pointsize>
-                     </font>
-                    </property>
-                    <property name="text">
-                     <string>Visit Link</string>
-                    </property>
-                   </widget>
-                  </item>
-                  <item row="23" column="1">
-                   <widget class="QPushButton" name="pushButton_24">
-                    <property name="font">
-                     <font>
-                      <family>Space Grotesk</family>
-                      <pointsize>13</pointsize>
-                     </font>
-                    </property>
-                    <property name="text">
-                     <string>Visit Link</string>
-                    </property>
-                   </widget>
-                  </item>
-                  <item row="0" column="1">
-                   <widget class="QPushButton" name="pushButton">
-                    <property name="font">
-                     <font>
-                      <family>Space Grotesk</family>
-                      <pointsize>13</pointsize>
-                     </font>
-                    </property>
-                    <property name="text">
-                     <string>Visit Link</string>
-                    </property>
-                   </widget>
-                  </item>
-                  <item row="20" column="1">
-                   <widget class="QPushButton" name="pushButton_21">
-                    <property name="font">
-                     <font>
-                      <family>Space Grotesk</family>
-                      <pointsize>13</pointsize>
-                     </font>
-                    </property>
-                    <property name="text">
-                     <string>Visit Link</string>
-                    </property>
-                   </widget>
-                  </item>
-                  <item row="18" column="1">
-                   <widget class="QPushButton" name="pushButton_19">
-                    <property name="font">
-                     <font>
-                      <family>Space Grotesk</family>
-                      <pointsize>13</pointsize>
-                     </font>
-                    </property>
-                    <property name="text">
-                     <string>Visit Link</string>
-                    </property>
-                   </widget>
-                  </item>
-                  <item row="26" column="0">
-                   <widget class="QLabel" name="label_43">
-                    <property name="font">
-                     <font>
-                      <family>Space Grotesk</family>
-                      <pointsize>13</pointsize>
-                     </font>
-                    </property>
-                    <property name="text">
-                     <string>Co-operative University (Thanlyin)</string>
-                    </property>
-                   </widget>
-                  </item>
-                  <item row="9" column="0">
-                   <widget class="QLabel" name="label_10">
-                    <property name="font">
-                     <font>
-                      <family>Space Grotesk</family>
-                      <pointsize>13</pointsize>
-                     </font>
-                    </property>
-                    <property name="text">
-                     <string>University of Medical Technology</string>
-                    </property>
-                   </widget>
-                  </item>
-                  <item row="5" column="0">
-                   <widget class="QLabel" name="label_6">
-                    <property name="font">
-                     <font>
-                      <family>Space Grotesk</family>
-                      <pointsize>13</pointsize>
-                     </font>
-                    </property>
-                    <property name="text">
-                     <string>Yangon University of Foreign Languages</string>
-                    </property>
-                   </widget>
-                  </item>
-                  <item row="17" column="0">
-                   <widget class="QLabel" name="label_18">
-                    <property name="font">
-                     <font>
-                      <family>Space Grotesk</family>
-                      <pointsize>13</pointsize>
-                     </font>
-                    </property>
-                    <property name="text">
-                     <string>Yezin Agricultural University</string>
-                    </property>
-                   </widget>
-                  </item>
-                  <item row="18" column="0">
-                   <widget class="QLabel" name="label_19">
-                    <property name="font">
-                     <font>
-                      <family>Space Grotesk</family>
-                      <pointsize>13</pointsize>
-                     </font>
-                    </property>
-                    <property name="text">
-                     <string>University of Forestry, Yezin</string>
-                    </property>
-                   </widget>
-                  </item>
-                  <item row="6" column="0">
-                   <widget class="QLabel" name="label_7">
-                    <property name="font">
-                     <font>
-                      <family>Space Grotesk</family>
-                      <pointsize>13</pointsize>
-                     </font>
-                    </property>
-                    <property name="text">
-                     <string>Myanmar Maritine University</string>
-                    </property>
-                   </widget>
-                  </item>
-                  <item row="1" column="0">
-                   <widget class="QLabel" name="label_2">
-                    <property name="font">
-                     <font>
-                      <family>Space Grotesk</family>
-                      <pointsize>13</pointsize>
-                     </font>
-                    </property>
-                    <property name="text">
-                     <string>University of Medicine 2</string>
-                    </property>
-                   </widget>
-                  </item>
-                  <item row="12" column="1">
-                   <widget class="QPushButton" name="pushButton_13">
-                    <property name="font">
-                     <font>
-                      <family>Space Grotesk</family>
-                      <pointsize>13</pointsize>
-                     </font>
-                    </property>
-                    <property name="text">
-                     <string>Visit Link</string>
-                    </property>
-                   </widget>
-                  </item>
-                  <item row="20" column="0">
-                   <widget class="QLabel" name="label_37">
-                    <property name="font">
-                     <font>
-                      <family>Space Grotesk</family>
-                      <pointsize>13</pointsize>
-                     </font>
-                    </property>
-                    <property name="text">
-                     <string>Technological University (Mandalay)</string>
-                    </property>
-                   </widget>
-                  </item>
-                  <item row="0" column="0">
-                   <widget class="QLabel" name="label">
-                    <property name="font">
-                     <font>
-                      <family>Space Grotesk</family>
-                      <pointsize>13</pointsize>
-                     </font>
-                    </property>
-                    <property name="text">
-                     <string>University of Medicine 1</string>
-                    </property>
-                   </widget>
-                  </item>
-                  <item row="2" column="0">
-                   <widget class="QLabel" name="label_3">
-                    <property name="font">
-                     <font>
-                      <family>Space Grotesk</family>
-                      <pointsize>13</pointsize>
-                     </font>
-                    </property>
-                    <property name="text">
-                     <string>Yangon Technology University</string>
-                    </property>
-                   </widget>
-                  </item>
-                  <item row="15" column="1">
-                   <widget class="QPushButton" name="pushButton_16">
-                    <property name="font">
-                     <font>
-                      <family>Space Grotesk</family>
-                      <pointsize>13</pointsize>
-                     </font>
-                    </property>
-                    <property name="text">
-                     <string>Visit Link</string>
-                    </property>
-                   </widget>
-                  </item>
-                  <item row="24" column="0">
+                  <item row="25" column="0">
                    <widget class="QLabel" name="label_41">
                     <property name="font">
                      <font>
@@ -1911,7 +1300,358 @@ p, li { white-space: pre-wrap; }
                     </property>
                    </widget>
                   </item>
-                  <item row="25" column="0">
+                  <item row="22" column="2">
+                   <widget class="QPushButton" name="pushButton_22">
+                    <property name="font">
+                     <font>
+                      <family>Space Grotesk</family>
+                      <pointsize>13</pointsize>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>Visit Link</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="10" column="0">
+                   <widget class="QLabel" name="label_10">
+                    <property name="font">
+                     <font>
+                      <family>Space Grotesk</family>
+                      <pointsize>13</pointsize>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>University of Medical Technology</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="2" column="2">
+                   <widget class="QPushButton" name="pushButton_2">
+                    <property name="font">
+                     <font>
+                      <family>Space Grotesk</family>
+                      <pointsize>13</pointsize>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>Visit Link</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="4" column="2">
+                   <widget class="QPushButton" name="pushButton_4">
+                    <property name="font">
+                     <font>
+                      <family>Space Grotesk</family>
+                      <pointsize>13</pointsize>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>Visit Link</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="18" column="0">
+                   <widget class="QLabel" name="label_18">
+                    <property name="font">
+                     <font>
+                      <family>Space Grotesk</family>
+                      <pointsize>13</pointsize>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>Yezin Agricultural University</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="13" column="2">
+                   <widget class="QPushButton" name="pushButton_13">
+                    <property name="font">
+                     <font>
+                      <family>Space Grotesk</family>
+                      <pointsize>13</pointsize>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>Visit Link</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="6" column="0">
+                   <widget class="QLabel" name="label_6">
+                    <property name="font">
+                     <font>
+                      <family>Space Grotesk</family>
+                      <pointsize>13</pointsize>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>Yangon University of Foreign Languages</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="9" column="0">
+                   <widget class="QLabel" name="label_9">
+                    <property name="font">
+                     <font>
+                      <family>Space Grotesk</family>
+                      <pointsize>13</pointsize>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>National Management Degree College</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="11" column="2">
+                   <widget class="QPushButton" name="pushButton_11">
+                    <property name="font">
+                     <font>
+                      <family>Space Grotesk</family>
+                      <pointsize>13</pointsize>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>Visit Link</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="7" column="0">
+                   <widget class="QLabel" name="label_7">
+                    <property name="font">
+                     <font>
+                      <family>Space Grotesk</family>
+                      <pointsize>13</pointsize>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>Myanmar Maritine University</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="1">
+                   <spacer name="horizontalSpacer_6">
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                    <property name="sizeHint" stdset="0">
+                     <size>
+                      <width>40</width>
+                      <height>20</height>
+                     </size>
+                    </property>
+                   </spacer>
+                  </item>
+                  <item row="2" column="0">
+                   <widget class="QLabel" name="label_2">
+                    <property name="font">
+                     <font>
+                      <family>Space Grotesk</family>
+                      <pointsize>13</pointsize>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>University of Medicine 2</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="20" column="0">
+                   <widget class="QLabel" name="label_20">
+                    <property name="font">
+                     <font>
+                      <family>Space Grotesk</family>
+                      <pointsize>13</pointsize>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>University of Veterinary Science</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="9" column="2">
+                   <widget class="QPushButton" name="pushButton_9">
+                    <property name="font">
+                     <font>
+                      <family>Space Grotesk</family>
+                      <pointsize>13</pointsize>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>Visit Link</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="7" column="2">
+                   <widget class="QPushButton" name="pushButton_7">
+                    <property name="font">
+                     <font>
+                      <family>Space Grotesk</family>
+                      <pointsize>13</pointsize>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>Visit Link</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="8" column="0">
+                   <widget class="QLabel" name="label_8">
+                    <property name="font">
+                     <font>
+                      <family>Space Grotesk</family>
+                      <pointsize>13</pointsize>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>University of Dental Medicne Yangon</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="23" column="2">
+                   <widget class="QPushButton" name="pushButton_23">
+                    <property name="font">
+                     <font>
+                      <family>Space Grotesk</family>
+                      <pointsize>13</pointsize>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>Visit Link</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="17" column="2">
+                   <widget class="QPushButton" name="pushButton_17">
+                    <property name="font">
+                     <font>
+                      <family>Space Grotesk</family>
+                      <pointsize>13</pointsize>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>Visit Link</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="19" column="0">
+                   <widget class="QLabel" name="label_19">
+                    <property name="font">
+                     <font>
+                      <family>Space Grotesk</family>
+                      <pointsize>13</pointsize>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>University of Forestry, Yezin</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="25" column="2">
+                   <widget class="QPushButton" name="pushButton_25">
+                    <property name="font">
+                     <font>
+                      <family>Space Grotesk</family>
+                      <pointsize>13</pointsize>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>Visit Link</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="0">
+                   <widget class="QLabel" name="label">
+                    <property name="font">
+                     <font>
+                      <family>Space Grotesk</family>
+                      <pointsize>13</pointsize>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>University of Medicine 1</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="14" column="2">
+                   <widget class="QPushButton" name="pushButton_14">
+                    <property name="font">
+                     <font>
+                      <family>Space Grotesk</family>
+                      <pointsize>13</pointsize>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>Visit LInk</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="24" column="0">
+                   <widget class="QLabel" name="label_40">
+                    <property name="font">
+                     <font>
+                      <family>Space Grotesk</family>
+                      <pointsize>13</pointsize>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>University of Medicine (Taungyi)</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="12" column="2">
+                   <widget class="QPushButton" name="pushButton_12">
+                    <property name="font">
+                     <font>
+                      <family>Space Grotesk</family>
+                      <pointsize>13</pointsize>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>Visit Link</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="3" column="0">
+                   <widget class="QLabel" name="label_3">
+                    <property name="font">
+                     <font>
+                      <family>Space Grotesk</family>
+                      <pointsize>13</pointsize>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>Yangon Technology University</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="17" column="0">
+                   <widget class="QLabel" name="label_17">
+                    <property name="font">
+                     <font>
+                      <family>Space Grotesk</family>
+                      <pointsize>13</pointsize>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>Univeristy of Computer Studies, Mandalay</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="21" column="2">
+                   <widget class="QPushButton" name="pushButton_21">
+                    <property name="font">
+                     <font>
+                      <family>Space Grotesk</family>
+                      <pointsize>13</pointsize>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>Visit Link</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="26" column="0">
                    <widget class="QLabel" name="label_42">
                     <property name="font">
                      <font>
@@ -1924,7 +1664,7 @@ p, li { white-space: pre-wrap; }
                     </property>
                    </widget>
                   </item>
-                  <item row="27" column="0">
+                  <item row="28" column="0">
                    <widget class="QLabel" name="label_44">
                     <property name="font">
                      <font>
@@ -1937,7 +1677,163 @@ p, li { white-space: pre-wrap; }
                     </property>
                    </widget>
                   </item>
-                  <item row="27" column="1">
+                  <item row="14" column="0">
+                   <widget class="QLabel" name="label_14">
+                    <property name="font">
+                     <font>
+                      <family>Space Grotesk</family>
+                      <pointsize>13</pointsize>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>Yadanabon Cyber City</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="20" column="2">
+                   <widget class="QPushButton" name="pushButton_20">
+                    <property name="font">
+                     <font>
+                      <family>Space Grotesk</family>
+                      <pointsize>13</pointsize>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>Visit Link</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="22" column="0">
+                   <widget class="QLabel" name="label_38">
+                    <property name="font">
+                     <font>
+                      <family>Space Grotesk</family>
+                      <pointsize>13</pointsize>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>National University of Arts and Culture</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="26" column="2">
+                   <widget class="QPushButton" name="pushButton_26">
+                    <property name="font">
+                     <font>
+                      <family>Space Grotesk</family>
+                      <pointsize>13</pointsize>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>Visit Link</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="13" column="0">
+                   <widget class="QLabel" name="label_13">
+                    <property name="font">
+                     <font>
+                      <family>Space Grotesk</family>
+                      <pointsize>13</pointsize>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>Mandalay University</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="27" column="2">
+                   <widget class="QPushButton" name="pushButton_27">
+                    <property name="font">
+                     <font>
+                      <family>Space Grotesk</family>
+                      <pointsize>13</pointsize>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>Visit Link</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="19" column="2">
+                   <widget class="QPushButton" name="pushButton_19">
+                    <property name="font">
+                     <font>
+                      <family>Space Grotesk</family>
+                      <pointsize>13</pointsize>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>Visit Link</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="6" column="2">
+                   <widget class="QPushButton" name="pushButton_6">
+                    <property name="font">
+                     <font>
+                      <family>Space Grotesk</family>
+                      <pointsize>13</pointsize>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>Visit Link</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="21" column="0">
+                   <widget class="QLabel" name="label_37">
+                    <property name="font">
+                     <font>
+                      <family>Space Grotesk</family>
+                      <pointsize>13</pointsize>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>Technological University (Mandalay)</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="16" column="2">
+                   <widget class="QPushButton" name="pushButton_16">
+                    <property name="font">
+                     <font>
+                      <family>Space Grotesk</family>
+                      <pointsize>13</pointsize>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>Visit Link</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="5" column="0">
+                   <widget class="QLabel" name="label_5">
+                    <property name="font">
+                     <font>
+                      <family>Space Grotesk</family>
+                      <pointsize>13</pointsize>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>Yangon University of Economics (Hlaing)</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="4" column="0">
+                   <widget class="QLabel" name="label_4">
+                    <property name="font">
+                     <font>
+                      <family>Space Grotesk</family>
+                      <pointsize>13</pointsize>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>Yangon University</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="28" column="2">
                    <widget class="QPushButton" name="pushButton_28">
                     <property name="font">
                      <font>
@@ -1947,6 +1843,175 @@ p, li { white-space: pre-wrap; }
                     </property>
                     <property name="text">
                      <string>Visit Link</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="18" column="2">
+                   <widget class="QPushButton" name="pushButton_18">
+                    <property name="font">
+                     <font>
+                      <family>Space Grotesk</family>
+                      <pointsize>13</pointsize>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>Visit Link</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="2">
+                   <widget class="QPushButton" name="pushButton">
+                    <property name="font">
+                     <font>
+                      <family>Space Grotesk</family>
+                      <pointsize>13</pointsize>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>Visit Link</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="10" column="2">
+                   <widget class="QPushButton" name="pushButton_10">
+                    <property name="font">
+                     <font>
+                      <family>Space Grotesk</family>
+                      <pointsize>13</pointsize>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>Visit Link</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="12" column="0">
+                   <widget class="QLabel" name="label_12">
+                    <property name="font">
+                     <font>
+                      <family>Space Grotesk</family>
+                      <pointsize>13</pointsize>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>Myanmar Mercantile Marine Colllege</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="3" column="2">
+                   <widget class="QPushButton" name="pushButton_3">
+                    <property name="font">
+                     <font>
+                      <family>Space Grotesk</family>
+                      <pointsize>13</pointsize>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>Visit Link</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="8" column="2">
+                   <widget class="QPushButton" name="pushButton_8">
+                    <property name="font">
+                     <font>
+                      <family>Space Grotesk</family>
+                      <pointsize>13</pointsize>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>Visit Link</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="16" column="0">
+                   <widget class="QLabel" name="label_16">
+                    <property name="font">
+                     <font>
+                      <family>Space Grotesk</family>
+                      <pointsize>13</pointsize>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>Myanmar Aerospace Engineering University</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="24" column="2">
+                   <widget class="QPushButton" name="pushButton_24">
+                    <property name="font">
+                     <font>
+                      <family>Space Grotesk</family>
+                      <pointsize>13</pointsize>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>Visit Link</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="5" column="2">
+                   <widget class="QPushButton" name="pushButton_5">
+                    <property name="font">
+                     <font>
+                      <family>Space Grotesk</family>
+                      <pointsize>13</pointsize>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>Visit Link</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="27" column="0">
+                   <widget class="QLabel" name="label_43">
+                    <property name="font">
+                     <font>
+                      <family>Space Grotesk</family>
+                      <pointsize>13</pointsize>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>Co-operative University (Thanlyin)</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="23" column="0">
+                   <widget class="QLabel" name="label_39">
+                    <property name="font">
+                     <font>
+                      <family>Space Grotesk</family>
+                      <pointsize>13</pointsize>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>University of Medicine (Magway)</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="0">
+                   <widget class="QLabel" name="label_48">
+                    <property name="font">
+                     <font>
+                      <family>Space Grotesk</family>
+                      <pointsize>13</pointsize>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>University of Information Technology</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="2">
+                   <widget class="QPushButton" name="pushButton_29">
+                    <property name="font">
+                     <font>
+                      <family>Space Grotesk</family>
+                      <pointsize>13</pointsize>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>Visit LInk</string>
                     </property>
                    </widget>
                   </item>

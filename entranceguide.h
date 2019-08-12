@@ -117,6 +117,8 @@ private slots:
     void on_pushButton_28_clicked();
     // links end
 
+    void on_pushButton_29_clicked();
+
 private:
     Ui::EntranceGuide *ui;
 };

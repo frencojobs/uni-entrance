@@ -2,8 +2,8 @@
 #include "ui_entranceguide.h"
 
 int bounds[2] = {};
-int madeList[37][2];
-int sortedList[37][2];
+int madeList[99][2];
+int sortedList[99][2];
 int mlc = 0;
 bool isValid = true;
 bool isMale = true;
@@ -19,6 +19,8 @@ EntranceGuide::EntranceGuide(QWidget *parent) :
     ui->setupUi(this);
     ui->centralWidget->setStyleSheet(StyleSheet);
     setState();
+    ui->err_msg->hide();
+    ui->err_msg_eco->hide();
     // example --
     ui->inp1->setText(QString::number(78));
     ui->inp2->setText(QString::number(75));
@@ -64,7 +66,7 @@ int* EntranceGuide::getBound(int i, int j)
 
 void EntranceGuide::searchData(int k, int e)
 {
-    for(int i=0;i<37;i++)
+    for(int i=0;i<99;i++)
     {
         madeList[i][0]=0;
         madeList[i][1]=101;
@@ -105,9 +107,9 @@ void EntranceGuide::searchData(int k, int e)
        success = true;
     }
 
-    for(int i=0;i<37;i++)
+    for(int i=0;i<99;i++)
     {
-        for(int j=37;j >= 0;j--)
+        for(int j=99;j >= 0;j--)
         {
             if(madeList[i][1]>=sortedList[j][1])
             {
@@ -115,7 +117,7 @@ void EntranceGuide::searchData(int k, int e)
                 madeList[i][0] = sortedList[j][0];
             }
         }
-        for(int j=0;j < 37;j++)
+        for(int j=0;j < 99;j++)
         {
             if(madeList[i][1] == sortedList[j][1])
             {
@@ -306,8 +308,8 @@ void EntranceGuide::on_search_btn_clicked()
     if(isValid)
     {
         ui->totalmarks->setText(QString::number(total));
-        //ui->errmsg->hide();
-        for (int i=0;i<37;i++)
+        ui->err_msg->hide();
+        for (int i=0;i<99;i++)
         {
             if(madeList[i][0] != 0)
             {
@@ -374,7 +376,7 @@ void EntranceGuide::on_search_btn_clicked()
         }
     }
     else {
-        //ui->errmsg->show();
+        ui->err_msg->show();
     }
     isValid = true;
 }
@@ -395,8 +397,8 @@ void EntranceGuide::on_search_btn_eco_clicked()
     if(isValid)
     {
         ui->totalmarks_eco->setText(QString::number(total));
-        //ui->errmsg_eco->hide();
-        for (int i=0;i<37;i++)
+        ui->err_msg_eco->hide();
+        for (int i=0;i<99;i++)
         {
             if(madeList[i][0] != 0)
             {
@@ -463,7 +465,7 @@ void EntranceGuide::on_search_btn_eco_clicked()
         }
     }
     else {
-        //ui->errmsg_eco->show();
+        ui->err_msg_eco->show();
     }
     isValid = true;
 }
@@ -613,5 +615,10 @@ void EntranceGuide::on_pushButton_27_clicked()
 void EntranceGuide::on_pushButton_28_clicked()
 {
     QDesktopServices::openUrl(QUrl("http://www.ltcbagan.com.mm/en/node/8", QUrl::TolerantMode));
+}
+
+void EntranceGuide::on_pushButton_29_clicked()
+{
+    QDesktopServices::openUrl(QUrl("https://uit.edu.mm/", QUrl::TolerantMode));
 }
 // Links end
