@@ -101,7 +101,8 @@ void EntranceGuide::searchData(int k, int e)
        if(k >= lowerbound)
        {
            madeList[mlc][0] = id;
-           madeList[mlc][1] = (k - lowerbound > difference) ? 100 : ceil((double(k - lowerbound)/(double)difference)*100.0);
+           if(k - lowerbound == 0) madeList[mlc][1] = 1;
+           else madeList[mlc][1] = (k - lowerbound > difference) ? 100 : ceil((double(k - lowerbound)/(double)difference)*100.0);
            mlc++;
        }
        success = true;
@@ -349,8 +350,8 @@ void EntranceGuide::on_search_btn_clicked()
                     firstHbl->setSizeConstraint(QLayout::SetFixedSize);
                     firstWidet->setLayout(firstHbl);
 
-                    upIcon->setPixmap(QPixmap("/home/frenco/Qt/projects/ueis/icons_up.png"));
-                    downIcon->setPixmap(QPixmap("/home/frenco/Qt/projects/ueis/icons_down.png"));
+                    upIcon->setPixmap(QPixmap(":/img//icons_up.png"));
+                    downIcon->setPixmap(QPixmap(":/img/icons_down.png"));
 
                     secondHbl->addWidget(upIcon);
                     secondHbl->addWidget(maxmark_label);
