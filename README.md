@@ -11,4 +11,13 @@ The app uses Qt as the main UI framework, and C++ as the main programming langua
 
 ## Contributors
 
-...
+[@Nova2Shine](https://github.com/Nova2Shine)  
+[@frencojobs](https://github.com/frencojobs)  
+[@NyiWaiYanHtoon](https://github.com/NyiWaiYanHtoon)  
+[@ChanMyaeHtoo](https://github.com/chanmyaehtoo)  
+[@kzackl](https://github.com/kzackl)  
+Gaw Lu Ja Naw  
+Set Paing  
+Su Sandi Linn  
+Thandar Swe Zin  
+Thin Lei Sandi  
