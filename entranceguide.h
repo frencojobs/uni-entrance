@@ -27,6 +27,7 @@ public:
     void updateStack();
     void connectdb(const QString&);
     void searchData(int, int);
+    void setState();
     int* getBound(int, int);
     int validate(int);
     QString colorcode(int);

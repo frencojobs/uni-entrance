@@ -18,6 +18,7 @@ EntranceGuide::EntranceGuide(QWidget *parent) :
     connectdb("/home/frenco/ent.db");
     ui->setupUi(this);
     ui->centralWidget->setStyleSheet(StyleSheet);
+    setState();
     // example --
     ui->inp1->setText(QString::number(78));
     ui->inp2->setText(QString::number(75));
@@ -166,49 +167,127 @@ QString EntranceGuide::padded(QString s)
     }
 }
 
+void EntranceGuide::setState()
+{
+    // gender
+    const QString genderOriginalStyleSheet = "QPushButton { background-color: #F2F2F2; color: #1976D2; border: 0; border-radius: 10px; padding: 10px 15px; margin: 0 20px; } QPushButton:pressed { background-color: #1976D2; color: #F2F2F2; }";
+    const QString genderChangedStyleSheet = "QPushButton { background-color: #1976D2; color: #FFFFFF; border: 0; border-radius: 10px; padding: 10px 15px; margin: 0 20px; } QPushButton:pressed { background-color: #1976D2; color: #F2F2F2; }";
+    if(isMale)
+    {
+        ui->male_btn->setStyleSheet(genderOriginalStyleSheet + genderChangedStyleSheet);
+        ui->female_btn->setStyleSheet(genderOriginalStyleSheet);
+    } else {
+        ui->male_btn->setStyleSheet(genderOriginalStyleSheet);
+        ui->female_btn->setStyleSheet(genderOriginalStyleSheet + genderChangedStyleSheet);
+    }
+    // sidebar
+    const QString sidebarOriginalStyleSheet = "QPushButton { border: 0;text-align: left; padding: 15px 40px;}";
+    const QString sidebarChangedStyleSheet = "QPushButton { background-color: #FFFFFF; border-right: 2px solid #1976D2; }";
+    switch(ui->stackedWidget->currentIndex())
+    {
+        case 0:
+        ui->home_btn->setStyleSheet(sidebarOriginalStyleSheet+sidebarChangedStyleSheet);
+        ui->guide_btn->setStyleSheet(sidebarOriginalStyleSheet);
+        ui->links_btn->setStyleSheet(sidebarOriginalStyleSheet);
+        ui->abroad_btn->setStyleSheet(sidebarOriginalStyleSheet);
+        ui->about_btn->setStyleSheet(sidebarOriginalStyleSheet);
+        break;
+        case 1:
+        ui->home_btn->setStyleSheet(sidebarOriginalStyleSheet);
+        ui->guide_btn->setStyleSheet(sidebarOriginalStyleSheet+sidebarChangedStyleSheet);
+        ui->links_btn->setStyleSheet(sidebarOriginalStyleSheet);
+        ui->abroad_btn->setStyleSheet(sidebarOriginalStyleSheet);
+        ui->about_btn->setStyleSheet(sidebarOriginalStyleSheet);
+        break;
+        case 2:
+        ui->home_btn->setStyleSheet(sidebarOriginalStyleSheet);
+        ui->guide_btn->setStyleSheet(sidebarOriginalStyleSheet);
+        ui->links_btn->setStyleSheet(sidebarOriginalStyleSheet+sidebarChangedStyleSheet);
+        ui->abroad_btn->setStyleSheet(sidebarOriginalStyleSheet);
+        ui->about_btn->setStyleSheet(sidebarOriginalStyleSheet);
+        break;
+        case 3:
+        ui->home_btn->setStyleSheet(sidebarOriginalStyleSheet);
+        ui->guide_btn->setStyleSheet(sidebarOriginalStyleSheet);
+        ui->links_btn->setStyleSheet(sidebarOriginalStyleSheet);
+        ui->abroad_btn->setStyleSheet(sidebarOriginalStyleSheet+sidebarChangedStyleSheet);
+        ui->about_btn->setStyleSheet(sidebarOriginalStyleSheet);
+        break;
+        case 4:
+        ui->home_btn->setStyleSheet(sidebarOriginalStyleSheet);
+        ui->guide_btn->setStyleSheet(sidebarOriginalStyleSheet);
+        ui->links_btn->setStyleSheet(sidebarOriginalStyleSheet);
+        ui->abroad_btn->setStyleSheet(sidebarOriginalStyleSheet);
+        ui->about_btn->setStyleSheet(sidebarOriginalStyleSheet+sidebarChangedStyleSheet);
+        break;
+    };
+    // bioeco btns
+    const QString routersOriginalStyleSheet = "QPushButton { border: 1px solid #1976D2; border-radius: 10px; padding: 10px 20px; background-color: #FFFFFF; color: #1976D2; margin: 50px 10px; }";
+    const QString routersChangedStyleSheet = "QPushButton { border: 1px solid #1976D2; border-radius: 10px; padding: 10px 20px; background-color: #1976D2; color: #FFFFFF; margin: 50px 10px; }";
+    switch(ui->inner_stackedWidget->currentIndex())
+    {
+        case 0:
+        ui->bio_btn->setStyleSheet(routersOriginalStyleSheet+routersChangedStyleSheet);
+        ui->eco_btn->setStyleSheet(routersOriginalStyleSheet);
+        break;
+        case 1:
+        ui->bio_btn->setStyleSheet(routersOriginalStyleSheet);
+        ui->eco_btn->setStyleSheet(routersOriginalStyleSheet+routersChangedStyleSheet);
+        break;
+    }
+}
 void EntranceGuide::on_male_btn_clicked()
 {
     isMale = true;
+    setState();
 }
 
 void EntranceGuide::on_female_btn_clicked()
 {
     isMale = false;
+    setState();
 }
 
 void EntranceGuide::on_home_btn_clicked()
 {
     ui->stackedWidget->setCurrentIndex(0);
+    setState();
 }
 
 void EntranceGuide::on_guide_btn_clicked()
 {
     ui->stackedWidget->setCurrentIndex(1);
+    setState();
 }
 
 void EntranceGuide::on_links_btn_clicked()
 {
     ui->stackedWidget->setCurrentIndex(2);
+    setState();
 }
 
 void EntranceGuide::on_abroad_btn_clicked()
 {
     ui->stackedWidget->setCurrentIndex(3);
+    setState();
 }
 
 void EntranceGuide::on_about_btn_clicked()
 {
     ui->stackedWidget->setCurrentIndex(4);
+    setState();
 }
 
 void EntranceGuide::on_bio_btn_clicked()
 {
     ui->inner_stackedWidget->setCurrentIndex(0);
+    setState();
 }
 
 void EntranceGuide::on_eco_btn_clicked()
 {
     ui->inner_stackedWidget->setCurrentIndex(1);
+    setState();
 }
 
 void EntranceGuide::on_search_btn_clicked()

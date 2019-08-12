@@ -30,11 +30,14 @@
     <property name="bottomMargin">
      <number>0</number>
     </property>
+    <property name="spacing">
+     <number>0</number>
+    </property>
     <item row="0" column="0">
      <layout class="QGridLayout" name="gridLayout" columnstretch="1,4">
       <item row="0" column="0">
        <layout class="QGridLayout" name="sideBar">
-        <property name="verticalSpacing">
+        <property name="spacing">
          <number>0</number>
         </property>
         <item row="13" column="0">
@@ -308,7 +311,7 @@
            <bool>true</bool>
           </property>
           <property name="currentIndex">
-           <number>2</number>
+           <number>0</number>
           </property>
           <widget class="QWidget" name="homePage">
            <property name="autoFillBackground">
@@ -406,6 +409,9 @@
                   </item>
                   <item row="0" column="0">
                    <layout class="QGridLayout" name="gridLayout_10">
+                    <property name="spacing">
+                     <number>0</number>
+                    </property>
                     <item row="0" column="0">
                      <widget class="QLabel" name="main_title_label">
                       <property name="font">
@@ -437,7 +443,7 @@
                   <item row="2" column="0">
                    <widget class="QStackedWidget" name="inner_stackedWidget">
                     <property name="currentIndex">
-                     <number>0</number>
+                     <number>1</number>
                     </property>
                     <widget class="QWidget" name="bioPage">
                      <layout class="QGridLayout" name="gridLayout_16">
@@ -458,18 +464,33 @@
                         <property name="font">
                          <font>
                           <family>Space Grotesk</family>
-                          <pointsize>12</pointsize>
+                          <pointsize>14</pointsize>
                          </font>
                         </property>
                        </widget>
                       </item>
                       <item row="1" column="0">
                        <layout class="QGridLayout" name="gridLayout_14">
+                        <property name="leftMargin">
+                         <number>0</number>
+                        </property>
+                        <property name="rightMargin">
+                         <number>0</number>
+                        </property>
                         <property name="spacing">
                          <number>0</number>
                         </property>
                         <item row="0" column="0">
                          <layout class="QGridLayout" name="gridLayout_15">
+                          <property name="leftMargin">
+                           <number>11</number>
+                          </property>
+                          <property name="rightMargin">
+                           <number>11</number>
+                          </property>
+                          <property name="bottomMargin">
+                           <number>21</number>
+                          </property>
                           <item row="1" column="0">
                            <widget class="QLabel" name="label_27">
                             <property name="font">
@@ -483,101 +504,6 @@
                             </property>
                            </widget>
                           </item>
-                          <item row="0" column="6">
-                           <widget class="QLabel" name="label_24">
-                            <property name="font">
-                             <font>
-                              <family>Space Grotesk</family>
-                              <pointsize>12</pointsize>
-                             </font>
-                            </property>
-                            <property name="text">
-                             <string>Math</string>
-                            </property>
-                           </widget>
-                          </item>
-                          <item row="1" column="6">
-                           <widget class="QLabel" name="label_25">
-                            <property name="font">
-                             <font>
-                              <family>Space Grotesk</family>
-                              <pointsize>12</pointsize>
-                             </font>
-                            </property>
-                            <property name="text">
-                             <string>Biology</string>
-                            </property>
-                           </widget>
-                          </item>
-                          <item row="0" column="7">
-                           <widget class="QLineEdit" name="inp3">
-                            <property name="font">
-                             <font>
-                              <family>Space Grotesk</family>
-                              <pointsize>12</pointsize>
-                             </font>
-                            </property>
-                           </widget>
-                          </item>
-                          <item row="1" column="7">
-                           <widget class="QLineEdit" name="inp6">
-                            <property name="font">
-                             <font>
-                              <family>Space Grotesk</family>
-                              <pointsize>12</pointsize>
-                             </font>
-                            </property>
-                           </widget>
-                          </item>
-                          <item row="3" column="5">
-                           <widget class="QLabel" name="totalmarks">
-                            <property name="font">
-                             <font>
-                              <family>Space Grotesk</family>
-                              <pointsize>12</pointsize>
-                             </font>
-                            </property>
-                            <property name="text">
-                             <string/>
-                            </property>
-                           </widget>
-                          </item>
-                          <item row="1" column="3">
-                           <widget class="QLabel" name="label_22">
-                            <property name="font">
-                             <font>
-                              <family>Space Grotesk</family>
-                              <pointsize>12</pointsize>
-                             </font>
-                            </property>
-                            <property name="text">
-                             <string>Chemistry</string>
-                            </property>
-                           </widget>
-                          </item>
-                          <item row="0" column="4">
-                           <widget class="QLineEdit" name="inp2">
-                            <property name="font">
-                             <font>
-                              <family>Space Grotesk</family>
-                              <pointsize>12</pointsize>
-                             </font>
-                            </property>
-                           </widget>
-                          </item>
-                          <item row="1" column="2">
-                           <spacer name="horizontalSpacer_15">
-                            <property name="orientation">
-                             <enum>Qt::Horizontal</enum>
-                            </property>
-                            <property name="sizeHint" stdset="0">
-                             <size>
-                              <width>40</width>
-                              <height>20</height>
-                             </size>
-                            </property>
-                           </spacer>
-                          </item>
                           <item row="2" column="0">
                            <widget class="QLabel" name="label_26">
                             <property name="font">
@@ -590,117 +516,6 @@
                              <string>Fields</string>
                             </property>
                            </widget>
-                          </item>
-                          <item row="1" column="1">
-                           <widget class="QLineEdit" name="inp4">
-                            <property name="font">
-                             <font>
-                              <family>Space Grotesk</family>
-                              <pointsize>12</pointsize>
-                             </font>
-                            </property>
-                           </widget>
-                          </item>
-                          <item row="0" column="5">
-                           <spacer name="horizontalSpacer_14">
-                            <property name="orientation">
-                             <enum>Qt::Horizontal</enum>
-                            </property>
-                            <property name="sizeHint" stdset="0">
-                             <size>
-                              <width>40</width>
-                              <height>20</height>
-                             </size>
-                            </property>
-                           </spacer>
-                          </item>
-                          <item row="0" column="1">
-                           <widget class="QLineEdit" name="inp1">
-                            <property name="font">
-                             <font>
-                              <family>Space Grotesk</family>
-                              <pointsize>12</pointsize>
-                             </font>
-                            </property>
-                           </widget>
-                          </item>
-                          <item row="1" column="5">
-                           <spacer name="horizontalSpacer_16">
-                            <property name="orientation">
-                             <enum>Qt::Horizontal</enum>
-                            </property>
-                            <property name="sizeHint" stdset="0">
-                             <size>
-                              <width>40</width>
-                              <height>20</height>
-                             </size>
-                            </property>
-                           </spacer>
-                          </item>
-                          <item row="1" column="4">
-                           <widget class="QLineEdit" name="inp5">
-                            <property name="font">
-                             <font>
-                              <family>Space Grotesk</family>
-                              <pointsize>12</pointsize>
-                             </font>
-                            </property>
-                           </widget>
-                          </item>
-                          <item row="3" column="4">
-                           <widget class="QLabel" name="label_28">
-                            <property name="font">
-                             <font>
-                              <family>Space Grotesk</family>
-                              <pointsize>12</pointsize>
-                             </font>
-                            </property>
-                            <property name="text">
-                             <string/>
-                            </property>
-                            <property name="scaledContents">
-                             <bool>false</bool>
-                            </property>
-                           </widget>
-                          </item>
-                          <item row="0" column="3">
-                           <widget class="QLabel" name="label_23">
-                            <property name="font">
-                             <font>
-                              <family>Space Grotesk</family>
-                              <pointsize>12</pointsize>
-                             </font>
-                            </property>
-                            <property name="text">
-                             <string>English</string>
-                            </property>
-                           </widget>
-                          </item>
-                          <item row="3" column="0">
-                           <widget class="QPushButton" name="search_btn">
-                            <property name="font">
-                             <font>
-                              <family>Space Grotesk</family>
-                              <pointsize>13</pointsize>
-                             </font>
-                            </property>
-                            <property name="text">
-                             <string>Search</string>
-                            </property>
-                           </widget>
-                          </item>
-                          <item row="0" column="2">
-                           <spacer name="horizontalSpacer_13">
-                            <property name="orientation">
-                             <enum>Qt::Horizontal</enum>
-                            </property>
-                            <property name="sizeHint" stdset="0">
-                             <size>
-                              <width>40</width>
-                              <height>20</height>
-                             </size>
-                            </property>
-                           </spacer>
                           </item>
                           <item row="2" column="1">
                            <widget class="QComboBox" name="field_box">
@@ -752,6 +567,75 @@
                             </item>
                            </widget>
                           </item>
+                          <item row="1" column="1">
+                           <widget class="QLineEdit" name="inp4">
+                            <property name="font">
+                             <font>
+                              <family>Space Grotesk</family>
+                              <pointsize>12</pointsize>
+                             </font>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="0" column="1">
+                           <widget class="QLineEdit" name="inp1">
+                            <property name="font">
+                             <font>
+                              <family>Space Grotesk</family>
+                              <pointsize>12</pointsize>
+                             </font>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="0" column="5">
+                           <spacer name="horizontalSpacer_14">
+                            <property name="orientation">
+                             <enum>Qt::Horizontal</enum>
+                            </property>
+                            <property name="sizeHint" stdset="0">
+                             <size>
+                              <width>40</width>
+                              <height>20</height>
+                             </size>
+                            </property>
+                           </spacer>
+                          </item>
+                          <item row="0" column="2">
+                           <spacer name="horizontalSpacer_13">
+                            <property name="orientation">
+                             <enum>Qt::Horizontal</enum>
+                            </property>
+                            <property name="sizeHint" stdset="0">
+                             <size>
+                              <width>40</width>
+                              <height>20</height>
+                             </size>
+                            </property>
+                           </spacer>
+                          </item>
+                          <item row="0" column="7">
+                           <widget class="QLineEdit" name="inp3">
+                            <property name="font">
+                             <font>
+                              <family>Space Grotesk</family>
+                              <pointsize>12</pointsize>
+                             </font>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="4" column="0">
+                           <widget class="QPushButton" name="search_btn">
+                            <property name="font">
+                             <font>
+                              <family>Space Grotesk</family>
+                              <pointsize>13</pointsize>
+                             </font>
+                            </property>
+                            <property name="text">
+                             <string>Search</string>
+                            </property>
+                           </widget>
+                          </item>
                           <item row="0" column="0">
                            <widget class="QLabel" name="label_21">
                             <property name="font">
@@ -765,23 +649,41 @@
                             </property>
                            </widget>
                           </item>
-                         </layout>
-                        </item>
-                       </layout>
-                      </item>
-                     </layout>
-                    </widget>
-                    <widget class="QWidget" name="ecoPage">
-                     <layout class="QGridLayout" name="gridLayout_20">
-                      <item row="0" column="0">
-                       <layout class="QGridLayout" name="gridLayout_17">
-                        <property name="spacing">
-                         <number>0</number>
-                        </property>
-                        <item row="0" column="0">
-                         <layout class="QGridLayout" name="gridLayout_19">
-                          <item row="1" column="0">
-                           <widget class="QLabel" name="label_29">
+                          <item row="0" column="4">
+                           <widget class="QLineEdit" name="inp2">
+                            <property name="font">
+                             <font>
+                              <family>Space Grotesk</family>
+                              <pointsize>12</pointsize>
+                             </font>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="1" column="4">
+                           <widget class="QLineEdit" name="inp5">
+                            <property name="font">
+                             <font>
+                              <family>Space Grotesk</family>
+                              <pointsize>12</pointsize>
+                             </font>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="1" column="5">
+                           <spacer name="horizontalSpacer_16">
+                            <property name="orientation">
+                             <enum>Qt::Horizontal</enum>
+                            </property>
+                            <property name="sizeHint" stdset="0">
+                             <size>
+                              <width>40</width>
+                              <height>20</height>
+                             </size>
+                            </property>
+                           </spacer>
+                          </item>
+                          <item row="1" column="3">
+                           <widget class="QLabel" name="label_22">
                             <property name="font">
                              <font>
                               <family>Space Grotesk</family>
@@ -789,12 +691,61 @@
                              </font>
                             </property>
                             <property name="text">
-                             <string>Physics</string>
+                             <string>Chemistry</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="1" column="6">
+                           <widget class="QLabel" name="label_25">
+                            <property name="font">
+                             <font>
+                              <family>Space Grotesk</family>
+                              <pointsize>12</pointsize>
+                             </font>
+                            </property>
+                            <property name="text">
+                             <string>Biology</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="1" column="2">
+                           <spacer name="horizontalSpacer_15">
+                            <property name="orientation">
+                             <enum>Qt::Horizontal</enum>
+                            </property>
+                            <property name="sizeHint" stdset="0">
+                             <size>
+                              <width>40</width>
+                              <height>20</height>
+                             </size>
+                            </property>
+                           </spacer>
+                          </item>
+                          <item row="1" column="7">
+                           <widget class="QLineEdit" name="inp6">
+                            <property name="font">
+                             <font>
+                              <family>Space Grotesk</family>
+                              <pointsize>12</pointsize>
+                             </font>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="0" column="3">
+                           <widget class="QLabel" name="label_23">
+                            <property name="font">
+                             <font>
+                              <family>Space Grotesk</family>
+                              <pointsize>12</pointsize>
+                             </font>
+                            </property>
+                            <property name="text">
+                             <string>English</string>
                             </property>
                            </widget>
                           </item>
                           <item row="0" column="6">
-                           <widget class="QLabel" name="label_30">
+                           <widget class="QLabel" name="label_24">
                             <property name="font">
                              <font>
                               <family>Space Grotesk</family>
@@ -803,6 +754,97 @@
                             </property>
                             <property name="text">
                              <string>Math</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="4" column="3">
+                           <widget class="QLabel" name="label_28">
+                            <property name="font">
+                             <font>
+                              <family>Space Grotesk</family>
+                              <pointsize>12</pointsize>
+                             </font>
+                            </property>
+                            <property name="text">
+                             <string>Total:</string>
+                            </property>
+                            <property name="scaledContents">
+                             <bool>false</bool>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="4" column="4">
+                           <widget class="QLabel" name="totalmarks">
+                            <property name="font">
+                             <font>
+                              <family>Space Grotesk</family>
+                              <pointsize>12</pointsize>
+                             </font>
+                            </property>
+                            <property name="text">
+                             <string/>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="3" column="1">
+                           <spacer name="verticalSpacer_6">
+                            <property name="orientation">
+                             <enum>Qt::Vertical</enum>
+                            </property>
+                            <property name="sizeType">
+                             <enum>QSizePolicy::Minimum</enum>
+                            </property>
+                            <property name="sizeHint" stdset="0">
+                             <size>
+                              <width>20</width>
+                              <height>40</height>
+                             </size>
+                            </property>
+                           </spacer>
+                          </item>
+                         </layout>
+                        </item>
+                       </layout>
+                      </item>
+                     </layout>
+                    </widget>
+                    <widget class="QWidget" name="ecoPage">
+                     <layout class="QGridLayout" name="gridLayout_20">
+                      <property name="leftMargin">
+                       <number>0</number>
+                      </property>
+                      <property name="topMargin">
+                       <number>0</number>
+                      </property>
+                      <property name="rightMargin">
+                       <number>0</number>
+                      </property>
+                      <property name="bottomMargin">
+                       <number>0</number>
+                      </property>
+                      <item row="0" column="0">
+                       <layout class="QGridLayout" name="gridLayout_17">
+                        <property name="spacing">
+                         <number>0</number>
+                        </property>
+                        <item row="0" column="0">
+                         <layout class="QGridLayout" name="gridLayout_19">
+                          <property name="leftMargin">
+                           <number>11</number>
+                          </property>
+                          <property name="rightMargin">
+                           <number>11</number>
+                          </property>
+                          <property name="bottomMargin">
+                           <number>21</number>
+                          </property>
+                          <item row="1" column="4">
+                           <widget class="QLineEdit" name="inp5_eco">
+                            <property name="font">
+                             <font>
+                              <family>Space Grotesk</family>
+                              <pointsize>12</pointsize>
+                             </font>
                             </property>
                            </widget>
                           </item>
@@ -819,36 +861,13 @@
                             </property>
                            </widget>
                           </item>
-                          <item row="0" column="7">
-                           <widget class="QLineEdit" name="inp3_eco">
+                          <item row="0" column="1">
+                           <widget class="QLineEdit" name="inp1_eco">
                             <property name="font">
                              <font>
                               <family>Space Grotesk</family>
                               <pointsize>12</pointsize>
                              </font>
-                            </property>
-                           </widget>
-                          </item>
-                          <item row="1" column="7">
-                           <widget class="QLineEdit" name="inp6_eco">
-                            <property name="font">
-                             <font>
-                              <family>Space Grotesk</family>
-                              <pointsize>12</pointsize>
-                             </font>
-                            </property>
-                           </widget>
-                          </item>
-                          <item row="3" column="5">
-                           <widget class="QLabel" name="totalmarks_eco">
-                            <property name="font">
-                             <font>
-                              <family>Space Grotesk</family>
-                              <pointsize>12</pointsize>
-                             </font>
-                            </property>
-                            <property name="text">
-                             <string/>
                             </property>
                            </widget>
                           </item>
@@ -865,18 +884,8 @@
                             </property>
                            </widget>
                           </item>
-                          <item row="0" column="4">
-                           <widget class="QLineEdit" name="inp2_eco">
-                            <property name="font">
-                             <font>
-                              <family>Space Grotesk</family>
-                              <pointsize>12</pointsize>
-                             </font>
-                            </property>
-                           </widget>
-                          </item>
-                          <item row="1" column="2">
-                           <spacer name="horizontalSpacer_17">
+                          <item row="0" column="5">
+                           <spacer name="horizontalSpacer_18">
                             <property name="orientation">
                              <enum>Qt::Horizontal</enum>
                             </property>
@@ -901,6 +910,29 @@
                             </property>
                            </widget>
                           </item>
+                          <item row="0" column="6">
+                           <widget class="QLabel" name="label_30">
+                            <property name="font">
+                             <font>
+                              <family>Space Grotesk</family>
+                              <pointsize>12</pointsize>
+                             </font>
+                            </property>
+                            <property name="text">
+                             <string>Math</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="0" column="4">
+                           <widget class="QLineEdit" name="inp2_eco">
+                            <property name="font">
+                             <font>
+                              <family>Space Grotesk</family>
+                              <pointsize>12</pointsize>
+                             </font>
+                            </property>
+                           </widget>
+                          </item>
                           <item row="1" column="1">
                            <widget class="QLineEdit" name="inp4_eco">
                             <property name="font">
@@ -910,104 +942,6 @@
                              </font>
                             </property>
                            </widget>
-                          </item>
-                          <item row="0" column="5">
-                           <spacer name="horizontalSpacer_18">
-                            <property name="orientation">
-                             <enum>Qt::Horizontal</enum>
-                            </property>
-                            <property name="sizeHint" stdset="0">
-                             <size>
-                              <width>40</width>
-                              <height>20</height>
-                             </size>
-                            </property>
-                           </spacer>
-                          </item>
-                          <item row="0" column="1">
-                           <widget class="QLineEdit" name="inp1_eco">
-                            <property name="font">
-                             <font>
-                              <family>Space Grotesk</family>
-                              <pointsize>12</pointsize>
-                             </font>
-                            </property>
-                           </widget>
-                          </item>
-                          <item row="1" column="5">
-                           <spacer name="horizontalSpacer_19">
-                            <property name="orientation">
-                             <enum>Qt::Horizontal</enum>
-                            </property>
-                            <property name="sizeHint" stdset="0">
-                             <size>
-                              <width>40</width>
-                              <height>20</height>
-                             </size>
-                            </property>
-                           </spacer>
-                          </item>
-                          <item row="1" column="4">
-                           <widget class="QLineEdit" name="inp5_eco">
-                            <property name="font">
-                             <font>
-                              <family>Space Grotesk</family>
-                              <pointsize>12</pointsize>
-                             </font>
-                            </property>
-                           </widget>
-                          </item>
-                          <item row="3" column="4">
-                           <widget class="QLabel" name="label_34">
-                            <property name="font">
-                             <font>
-                              <family>Space Grotesk</family>
-                              <pointsize>12</pointsize>
-                             </font>
-                            </property>
-                            <property name="text">
-                             <string>Total:</string>
-                            </property>
-                           </widget>
-                          </item>
-                          <item row="0" column="3">
-                           <widget class="QLabel" name="label_35">
-                            <property name="font">
-                             <font>
-                              <family>Space Grotesk</family>
-                              <pointsize>12</pointsize>
-                             </font>
-                            </property>
-                            <property name="text">
-                             <string>English</string>
-                            </property>
-                           </widget>
-                          </item>
-                          <item row="3" column="0">
-                           <widget class="QPushButton" name="search_btn_eco">
-                            <property name="font">
-                             <font>
-                              <family>Space Grotesk</family>
-                              <pointsize>13</pointsize>
-                             </font>
-                            </property>
-                            <property name="text">
-                             <string>Search</string>
-                            </property>
-                           </widget>
-                          </item>
-                          <item row="0" column="2">
-                           <spacer name="horizontalSpacer_20">
-                            <property name="orientation">
-                             <enum>Qt::Horizontal</enum>
-                            </property>
-                            <property name="sizeHint" stdset="0">
-                             <size>
-                              <width>40</width>
-                              <height>20</height>
-                             </size>
-                            </property>
-                           </spacer>
                           </item>
                           <item row="2" column="1">
                            <widget class="QComboBox" name="field_box_eco">
@@ -1054,6 +988,58 @@
                             </item>
                            </widget>
                           </item>
+                          <item row="0" column="2">
+                           <spacer name="horizontalSpacer_20">
+                            <property name="orientation">
+                             <enum>Qt::Horizontal</enum>
+                            </property>
+                            <property name="sizeHint" stdset="0">
+                             <size>
+                              <width>40</width>
+                              <height>20</height>
+                             </size>
+                            </property>
+                           </spacer>
+                          </item>
+                          <item row="4" column="0">
+                           <widget class="QPushButton" name="search_btn_eco">
+                            <property name="font">
+                             <font>
+                              <family>Space Grotesk</family>
+                              <pointsize>13</pointsize>
+                             </font>
+                            </property>
+                            <property name="text">
+                             <string>Search</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="1" column="2">
+                           <spacer name="horizontalSpacer_17">
+                            <property name="orientation">
+                             <enum>Qt::Horizontal</enum>
+                            </property>
+                            <property name="sizeHint" stdset="0">
+                             <size>
+                              <width>40</width>
+                              <height>20</height>
+                             </size>
+                            </property>
+                           </spacer>
+                          </item>
+                          <item row="0" column="3">
+                           <widget class="QLabel" name="label_35">
+                            <property name="font">
+                             <font>
+                              <family>Space Grotesk</family>
+                              <pointsize>12</pointsize>
+                             </font>
+                            </property>
+                            <property name="text">
+                             <string>English</string>
+                            </property>
+                           </widget>
+                          </item>
                           <item row="0" column="0">
                            <widget class="QLabel" name="label_36">
                             <property name="font">
@@ -1067,6 +1053,94 @@
                             </property>
                            </widget>
                           </item>
+                          <item row="1" column="5">
+                           <spacer name="horizontalSpacer_19">
+                            <property name="orientation">
+                             <enum>Qt::Horizontal</enum>
+                            </property>
+                            <property name="sizeHint" stdset="0">
+                             <size>
+                              <width>40</width>
+                              <height>20</height>
+                             </size>
+                            </property>
+                           </spacer>
+                          </item>
+                          <item row="0" column="7">
+                           <widget class="QLineEdit" name="inp3_eco">
+                            <property name="font">
+                             <font>
+                              <family>Space Grotesk</family>
+                              <pointsize>12</pointsize>
+                             </font>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="1" column="7">
+                           <widget class="QLineEdit" name="inp6_eco">
+                            <property name="font">
+                             <font>
+                              <family>Space Grotesk</family>
+                              <pointsize>12</pointsize>
+                             </font>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="1" column="0">
+                           <widget class="QLabel" name="label_29">
+                            <property name="font">
+                             <font>
+                              <family>Space Grotesk</family>
+                              <pointsize>12</pointsize>
+                             </font>
+                            </property>
+                            <property name="text">
+                             <string>Physics</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="3" column="1">
+                           <spacer name="verticalSpacer_7">
+                            <property name="orientation">
+                             <enum>Qt::Vertical</enum>
+                            </property>
+                            <property name="sizeType">
+                             <enum>QSizePolicy::Minimum</enum>
+                            </property>
+                            <property name="sizeHint" stdset="0">
+                             <size>
+                              <width>20</width>
+                              <height>40</height>
+                             </size>
+                            </property>
+                           </spacer>
+                          </item>
+                          <item row="4" column="3">
+                           <widget class="QLabel" name="label_34">
+                            <property name="font">
+                             <font>
+                              <family>Space Grotesk</family>
+                              <pointsize>12</pointsize>
+                             </font>
+                            </property>
+                            <property name="text">
+                             <string>Total:</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="4" column="4">
+                           <widget class="QLabel" name="totalmarks_eco">
+                            <property name="font">
+                             <font>
+                              <family>Space Grotesk</family>
+                              <pointsize>12</pointsize>
+                             </font>
+                            </property>
+                            <property name="text">
+                             <string/>
+                            </property>
+                           </widget>
+                          </item>
                          </layout>
                         </item>
                        </layout>
@@ -1076,7 +1150,7 @@
                         <property name="font">
                          <font>
                           <family>Space Grotesk</family>
-                          <pointsize>12</pointsize>
+                          <pointsize>14</pointsize>
                          </font>
                         </property>
                        </widget>
@@ -1141,8 +1215,8 @@ p, li { white-space: pre-wrap; }
                 <rect>
                  <x>0</x>
                  <y>0</y>
-                 <width>906</width>
-                 <height>1081</height>
+                 <width>579</width>
+                 <height>1277</height>
                 </rect>
                </property>
                <layout class="QGridLayout" name="gridLayout_7">
@@ -1150,6 +1224,12 @@ p, li { white-space: pre-wrap; }
                  <layout class="QGridLayout" name="gridLayout_6">
                   <item row="8" column="0">
                    <widget class="QLabel" name="label_9">
+                    <property name="font">
+                     <font>
+                      <family>Space Grotesk</family>
+                      <pointsize>13</pointsize>
+                     </font>
+                    </property>
                     <property name="text">
                      <string>National Management Degree College</string>
                     </property>
@@ -1157,6 +1237,12 @@ p, li { white-space: pre-wrap; }
                   </item>
                   <item row="3" column="1">
                    <widget class="QPushButton" name="pushButton_4">
+                    <property name="font">
+                     <font>
+                      <family>Space Grotesk</family>
+                      <pointsize>13</pointsize>
+                     </font>
+                    </property>
                     <property name="text">
                      <string>Visit Link</string>
                     </property>
@@ -1164,6 +1250,12 @@ p, li { white-space: pre-wrap; }
                   </item>
                   <item row="11" column="1">
                    <widget class="QPushButton" name="pushButton_12">
+                    <property name="font">
+                     <font>
+                      <family>Space Grotesk</family>
+                      <pointsize>13</pointsize>
+                     </font>
+                    </property>
                     <property name="text">
                      <string>Visit Link</string>
                     </property>
@@ -1171,6 +1263,12 @@ p, li { white-space: pre-wrap; }
                   </item>
                   <item row="14" column="0">
                    <widget class="QLabel" name="label_15">
+                    <property name="font">
+                     <font>
+                      <family>Space Grotesk</family>
+                      <pointsize>13</pointsize>
+                     </font>
+                    </property>
                     <property name="text">
                      <string>Mandalay Technology University</string>
                     </property>
@@ -1178,6 +1276,12 @@ p, li { white-space: pre-wrap; }
                   </item>
                   <item row="10" column="0">
                    <widget class="QLabel" name="label_11">
+                    <property name="font">
+                     <font>
+                      <family>Space Grotesk</family>
+                      <pointsize>13</pointsize>
+                     </font>
+                    </property>
                     <property name="text">
                      <string>Yangon University of Education</string>
                     </property>
@@ -1185,6 +1289,12 @@ p, li { white-space: pre-wrap; }
                   </item>
                   <item row="17" column="1">
                    <widget class="QPushButton" name="pushButton_18">
+                    <property name="font">
+                     <font>
+                      <family>Space Grotesk</family>
+                      <pointsize>13</pointsize>
+                     </font>
+                    </property>
                     <property name="text">
                      <string>Visit Link</string>
                     </property>
@@ -1192,6 +1302,12 @@ p, li { white-space: pre-wrap; }
                   </item>
                   <item row="19" column="1">
                    <widget class="QPushButton" name="pushButton_20">
+                    <property name="font">
+                     <font>
+                      <family>Space Grotesk</family>
+                      <pointsize>13</pointsize>
+                     </font>
+                    </property>
                     <property name="text">
                      <string>Visit Link</string>
                     </property>
@@ -1199,6 +1315,12 @@ p, li { white-space: pre-wrap; }
                   </item>
                   <item row="16" column="0">
                    <widget class="QLabel" name="label_17">
+                    <property name="font">
+                     <font>
+                      <family>Space Grotesk</family>
+                      <pointsize>13</pointsize>
+                     </font>
+                    </property>
                     <property name="text">
                      <string>Univeristy of Computer Studies, Mandalay</string>
                     </property>
@@ -1206,6 +1328,12 @@ p, li { white-space: pre-wrap; }
                   </item>
                   <item row="6" column="1">
                    <widget class="QPushButton" name="pushButton_7">
+                    <property name="font">
+                     <font>
+                      <family>Space Grotesk</family>
+                      <pointsize>13</pointsize>
+                     </font>
+                    </property>
                     <property name="text">
                      <string>Visit Link</string>
                     </property>
@@ -1213,6 +1341,12 @@ p, li { white-space: pre-wrap; }
                   </item>
                   <item row="7" column="0">
                    <widget class="QLabel" name="label_8">
+                    <property name="font">
+                     <font>
+                      <family>Space Grotesk</family>
+                      <pointsize>13</pointsize>
+                     </font>
+                    </property>
                     <property name="text">
                      <string>University of Dental Medicne Yangon</string>
                     </property>
@@ -1220,6 +1354,12 @@ p, li { white-space: pre-wrap; }
                   </item>
                   <item row="23" column="0">
                    <widget class="QLabel" name="label_40">
+                    <property name="font">
+                     <font>
+                      <family>Space Grotesk</family>
+                      <pointsize>13</pointsize>
+                     </font>
+                    </property>
                     <property name="text">
                      <string>University of Medicine (Taungyi)</string>
                     </property>
@@ -1227,6 +1367,12 @@ p, li { white-space: pre-wrap; }
                   </item>
                   <item row="13" column="0">
                    <widget class="QLabel" name="label_14">
+                    <property name="font">
+                     <font>
+                      <family>Space Grotesk</family>
+                      <pointsize>13</pointsize>
+                     </font>
+                    </property>
                     <property name="text">
                      <string>Yadanabon Cyber City</string>
                     </property>
@@ -1234,6 +1380,12 @@ p, li { white-space: pre-wrap; }
                   </item>
                   <item row="21" column="0">
                    <widget class="QLabel" name="label_38">
+                    <property name="font">
+                     <font>
+                      <family>Space Grotesk</family>
+                      <pointsize>13</pointsize>
+                     </font>
+                    </property>
                     <property name="text">
                      <string>National University of Arts and Culture</string>
                     </property>
@@ -1241,6 +1393,12 @@ p, li { white-space: pre-wrap; }
                   </item>
                   <item row="3" column="0">
                    <widget class="QLabel" name="label_4">
+                    <property name="font">
+                     <font>
+                      <family>Space Grotesk</family>
+                      <pointsize>13</pointsize>
+                     </font>
+                    </property>
                     <property name="text">
                      <string>Yangon University</string>
                     </property>
@@ -1248,6 +1406,12 @@ p, li { white-space: pre-wrap; }
                   </item>
                   <item row="16" column="1">
                    <widget class="QPushButton" name="pushButton_17">
+                    <property name="font">
+                     <font>
+                      <family>Space Grotesk</family>
+                      <pointsize>13</pointsize>
+                     </font>
+                    </property>
                     <property name="text">
                      <string>Visit Link</string>
                     </property>
@@ -1255,6 +1419,12 @@ p, li { white-space: pre-wrap; }
                   </item>
                   <item row="26" column="1">
                    <widget class="QPushButton" name="pushButton_27">
+                    <property name="font">
+                     <font>
+                      <family>Space Grotesk</family>
+                      <pointsize>13</pointsize>
+                     </font>
+                    </property>
                     <property name="text">
                      <string>Visit Link</string>
                     </property>
@@ -1262,6 +1432,12 @@ p, li { white-space: pre-wrap; }
                   </item>
                   <item row="1" column="1">
                    <widget class="QPushButton" name="pushButton_2">
+                    <property name="font">
+                     <font>
+                      <family>Space Grotesk</family>
+                      <pointsize>13</pointsize>
+                     </font>
+                    </property>
                     <property name="text">
                      <string>Visit Link</string>
                     </property>
@@ -1269,6 +1445,12 @@ p, li { white-space: pre-wrap; }
                   </item>
                   <item row="24" column="1">
                    <widget class="QPushButton" name="pushButton_25">
+                    <property name="font">
+                     <font>
+                      <family>Space Grotesk</family>
+                      <pointsize>13</pointsize>
+                     </font>
+                    </property>
                     <property name="text">
                      <string>Visit Link</string>
                     </property>
@@ -1276,6 +1458,12 @@ p, li { white-space: pre-wrap; }
                   </item>
                   <item row="22" column="1">
                    <widget class="QPushButton" name="pushButton_23">
+                    <property name="font">
+                     <font>
+                      <family>Space Grotesk</family>
+                      <pointsize>13</pointsize>
+                     </font>
+                    </property>
                     <property name="text">
                      <string>Visit Link</string>
                     </property>
@@ -1283,6 +1471,12 @@ p, li { white-space: pre-wrap; }
                   </item>
                   <item row="13" column="1">
                    <widget class="QPushButton" name="pushButton_14">
+                    <property name="font">
+                     <font>
+                      <family>Space Grotesk</family>
+                      <pointsize>13</pointsize>
+                     </font>
+                    </property>
                     <property name="text">
                      <string>Visit LInk</string>
                     </property>
@@ -1290,6 +1484,12 @@ p, li { white-space: pre-wrap; }
                   </item>
                   <item row="4" column="0">
                    <widget class="QLabel" name="label_5">
+                    <property name="font">
+                     <font>
+                      <family>Space Grotesk</family>
+                      <pointsize>13</pointsize>
+                     </font>
+                    </property>
                     <property name="text">
                      <string>Yangon University of Economics (Hlaing)</string>
                     </property>
@@ -1297,6 +1497,12 @@ p, li { white-space: pre-wrap; }
                   </item>
                   <item row="19" column="0">
                    <widget class="QLabel" name="label_20">
+                    <property name="font">
+                     <font>
+                      <family>Space Grotesk</family>
+                      <pointsize>13</pointsize>
+                     </font>
+                    </property>
                     <property name="text">
                      <string>University of Veterinary Science</string>
                     </property>
@@ -1304,6 +1510,12 @@ p, li { white-space: pre-wrap; }
                   </item>
                   <item row="8" column="1">
                    <widget class="QPushButton" name="pushButton_9">
+                    <property name="font">
+                     <font>
+                      <family>Space Grotesk</family>
+                      <pointsize>13</pointsize>
+                     </font>
+                    </property>
                     <property name="text">
                      <string>Visit Link</string>
                     </property>
@@ -1311,6 +1523,12 @@ p, li { white-space: pre-wrap; }
                   </item>
                   <item row="15" column="0">
                    <widget class="QLabel" name="label_16">
+                    <property name="font">
+                     <font>
+                      <family>Space Grotesk</family>
+                      <pointsize>13</pointsize>
+                     </font>
+                    </property>
                     <property name="text">
                      <string>Myanmar Aerospace Engineering University</string>
                     </property>
@@ -1318,6 +1536,12 @@ p, li { white-space: pre-wrap; }
                   </item>
                   <item row="22" column="0">
                    <widget class="QLabel" name="label_39">
+                    <property name="font">
+                     <font>
+                      <family>Space Grotesk</family>
+                      <pointsize>13</pointsize>
+                     </font>
+                    </property>
                     <property name="text">
                      <string>University of Medicine (Magway)</string>
                     </property>
@@ -1325,6 +1549,12 @@ p, li { white-space: pre-wrap; }
                   </item>
                   <item row="2" column="1">
                    <widget class="QPushButton" name="pushButton_3">
+                    <property name="font">
+                     <font>
+                      <family>Space Grotesk</family>
+                      <pointsize>13</pointsize>
+                     </font>
+                    </property>
                     <property name="text">
                      <string>Visit Link</string>
                     </property>
@@ -1332,6 +1562,12 @@ p, li { white-space: pre-wrap; }
                   </item>
                   <item row="12" column="0">
                    <widget class="QLabel" name="label_13">
+                    <property name="font">
+                     <font>
+                      <family>Space Grotesk</family>
+                      <pointsize>13</pointsize>
+                     </font>
+                    </property>
                     <property name="text">
                      <string>Mandalay University</string>
                     </property>
@@ -1339,6 +1575,12 @@ p, li { white-space: pre-wrap; }
                   </item>
                   <item row="7" column="1">
                    <widget class="QPushButton" name="pushButton_8">
+                    <property name="font">
+                     <font>
+                      <family>Space Grotesk</family>
+                      <pointsize>13</pointsize>
+                     </font>
+                    </property>
                     <property name="text">
                      <string>Visit Link</string>
                     </property>
@@ -1346,6 +1588,12 @@ p, li { white-space: pre-wrap; }
                   </item>
                   <item row="25" column="1">
                    <widget class="QPushButton" name="pushButton_26">
+                    <property name="font">
+                     <font>
+                      <family>Space Grotesk</family>
+                      <pointsize>13</pointsize>
+                     </font>
+                    </property>
                     <property name="text">
                      <string>Visit Link</string>
                     </property>
@@ -1353,6 +1601,12 @@ p, li { white-space: pre-wrap; }
                   </item>
                   <item row="5" column="1">
                    <widget class="QPushButton" name="pushButton_6">
+                    <property name="font">
+                     <font>
+                      <family>Space Grotesk</family>
+                      <pointsize>13</pointsize>
+                     </font>
+                    </property>
                     <property name="text">
                      <string>Visit Link</string>
                     </property>
@@ -1360,6 +1614,12 @@ p, li { white-space: pre-wrap; }
                   </item>
                   <item row="4" column="1">
                    <widget class="QPushButton" name="pushButton_5">
+                    <property name="font">
+                     <font>
+                      <family>Space Grotesk</family>
+                      <pointsize>13</pointsize>
+                     </font>
+                    </property>
                     <property name="text">
                      <string>Visit Link</string>
                     </property>
@@ -1367,6 +1627,12 @@ p, li { white-space: pre-wrap; }
                   </item>
                   <item row="14" column="1">
                    <widget class="QPushButton" name="pushButton_15">
+                    <property name="font">
+                     <font>
+                      <family>Space Grotesk</family>
+                      <pointsize>13</pointsize>
+                     </font>
+                    </property>
                     <property name="text">
                      <string>Visit Link</string>
                     </property>
@@ -1374,6 +1640,12 @@ p, li { white-space: pre-wrap; }
                   </item>
                   <item row="10" column="1">
                    <widget class="QPushButton" name="pushButton_11">
+                    <property name="font">
+                     <font>
+                      <family>Space Grotesk</family>
+                      <pointsize>13</pointsize>
+                     </font>
+                    </property>
                     <property name="text">
                      <string>Visit Link</string>
                     </property>
@@ -1381,6 +1653,12 @@ p, li { white-space: pre-wrap; }
                   </item>
                   <item row="11" column="0">
                    <widget class="QLabel" name="label_12">
+                    <property name="font">
+                     <font>
+                      <family>Space Grotesk</family>
+                      <pointsize>13</pointsize>
+                     </font>
+                    </property>
                     <property name="text">
                      <string>Myanmar Mercantile Marine Colllege</string>
                     </property>
@@ -1388,6 +1666,12 @@ p, li { white-space: pre-wrap; }
                   </item>
                   <item row="9" column="1">
                    <widget class="QPushButton" name="pushButton_10">
+                    <property name="font">
+                     <font>
+                      <family>Space Grotesk</family>
+                      <pointsize>13</pointsize>
+                     </font>
+                    </property>
                     <property name="text">
                      <string>Visit Link</string>
                     </property>
@@ -1395,6 +1679,12 @@ p, li { white-space: pre-wrap; }
                   </item>
                   <item row="21" column="1">
                    <widget class="QPushButton" name="pushButton_22">
+                    <property name="font">
+                     <font>
+                      <family>Space Grotesk</family>
+                      <pointsize>13</pointsize>
+                     </font>
+                    </property>
                     <property name="text">
                      <string>Visit Link</string>
                     </property>
@@ -1402,6 +1692,12 @@ p, li { white-space: pre-wrap; }
                   </item>
                   <item row="23" column="1">
                    <widget class="QPushButton" name="pushButton_24">
+                    <property name="font">
+                     <font>
+                      <family>Space Grotesk</family>
+                      <pointsize>13</pointsize>
+                     </font>
+                    </property>
                     <property name="text">
                      <string>Visit Link</string>
                     </property>
@@ -1409,6 +1705,12 @@ p, li { white-space: pre-wrap; }
                   </item>
                   <item row="0" column="1">
                    <widget class="QPushButton" name="pushButton">
+                    <property name="font">
+                     <font>
+                      <family>Space Grotesk</family>
+                      <pointsize>13</pointsize>
+                     </font>
+                    </property>
                     <property name="text">
                      <string>Visit Link</string>
                     </property>
@@ -1416,6 +1718,12 @@ p, li { white-space: pre-wrap; }
                   </item>
                   <item row="20" column="1">
                    <widget class="QPushButton" name="pushButton_21">
+                    <property name="font">
+                     <font>
+                      <family>Space Grotesk</family>
+                      <pointsize>13</pointsize>
+                     </font>
+                    </property>
                     <property name="text">
                      <string>Visit Link</string>
                     </property>
@@ -1423,6 +1731,12 @@ p, li { white-space: pre-wrap; }
                   </item>
                   <item row="18" column="1">
                    <widget class="QPushButton" name="pushButton_19">
+                    <property name="font">
+                     <font>
+                      <family>Space Grotesk</family>
+                      <pointsize>13</pointsize>
+                     </font>
+                    </property>
                     <property name="text">
                      <string>Visit Link</string>
                     </property>
@@ -1430,6 +1744,12 @@ p, li { white-space: pre-wrap; }
                   </item>
                   <item row="26" column="0">
                    <widget class="QLabel" name="label_43">
+                    <property name="font">
+                     <font>
+                      <family>Space Grotesk</family>
+                      <pointsize>13</pointsize>
+                     </font>
+                    </property>
                     <property name="text">
                      <string>Co-operative University (Thanlyin)</string>
                     </property>
@@ -1437,6 +1757,12 @@ p, li { white-space: pre-wrap; }
                   </item>
                   <item row="9" column="0">
                    <widget class="QLabel" name="label_10">
+                    <property name="font">
+                     <font>
+                      <family>Space Grotesk</family>
+                      <pointsize>13</pointsize>
+                     </font>
+                    </property>
                     <property name="text">
                      <string>University of Medical Technology</string>
                     </property>
@@ -1444,6 +1770,12 @@ p, li { white-space: pre-wrap; }
                   </item>
                   <item row="5" column="0">
                    <widget class="QLabel" name="label_6">
+                    <property name="font">
+                     <font>
+                      <family>Space Grotesk</family>
+                      <pointsize>13</pointsize>
+                     </font>
+                    </property>
                     <property name="text">
                      <string>Yangon University of Foreign Languages</string>
                     </property>
@@ -1451,6 +1783,12 @@ p, li { white-space: pre-wrap; }
                   </item>
                   <item row="17" column="0">
                    <widget class="QLabel" name="label_18">
+                    <property name="font">
+                     <font>
+                      <family>Space Grotesk</family>
+                      <pointsize>13</pointsize>
+                     </font>
+                    </property>
                     <property name="text">
                      <string>Yezin Agricultural University</string>
                     </property>
@@ -1458,6 +1796,12 @@ p, li { white-space: pre-wrap; }
                   </item>
                   <item row="18" column="0">
                    <widget class="QLabel" name="label_19">
+                    <property name="font">
+                     <font>
+                      <family>Space Grotesk</family>
+                      <pointsize>13</pointsize>
+                     </font>
+                    </property>
                     <property name="text">
                      <string>University of Forestry, Yezin</string>
                     </property>
@@ -1465,6 +1809,12 @@ p, li { white-space: pre-wrap; }
                   </item>
                   <item row="6" column="0">
                    <widget class="QLabel" name="label_7">
+                    <property name="font">
+                     <font>
+                      <family>Space Grotesk</family>
+                      <pointsize>13</pointsize>
+                     </font>
+                    </property>
                     <property name="text">
                      <string>Myanmar Maritine University</string>
                     </property>
@@ -1472,6 +1822,12 @@ p, li { white-space: pre-wrap; }
                   </item>
                   <item row="1" column="0">
                    <widget class="QLabel" name="label_2">
+                    <property name="font">
+                     <font>
+                      <family>Space Grotesk</family>
+                      <pointsize>13</pointsize>
+                     </font>
+                    </property>
                     <property name="text">
                      <string>University of Medicine 2</string>
                     </property>
@@ -1479,6 +1835,12 @@ p, li { white-space: pre-wrap; }
                   </item>
                   <item row="12" column="1">
                    <widget class="QPushButton" name="pushButton_13">
+                    <property name="font">
+                     <font>
+                      <family>Space Grotesk</family>
+                      <pointsize>13</pointsize>
+                     </font>
+                    </property>
                     <property name="text">
                      <string>Visit Link</string>
                     </property>
@@ -1486,6 +1848,12 @@ p, li { white-space: pre-wrap; }
                   </item>
                   <item row="20" column="0">
                    <widget class="QLabel" name="label_37">
+                    <property name="font">
+                     <font>
+                      <family>Space Grotesk</family>
+                      <pointsize>13</pointsize>
+                     </font>
+                    </property>
                     <property name="text">
                      <string>Technological University (Mandalay)</string>
                     </property>
@@ -1493,6 +1861,12 @@ p, li { white-space: pre-wrap; }
                   </item>
                   <item row="0" column="0">
                    <widget class="QLabel" name="label">
+                    <property name="font">
+                     <font>
+                      <family>Space Grotesk</family>
+                      <pointsize>13</pointsize>
+                     </font>
+                    </property>
                     <property name="text">
                      <string>University of Medicine 1</string>
                     </property>
@@ -1500,6 +1874,12 @@ p, li { white-space: pre-wrap; }
                   </item>
                   <item row="2" column="0">
                    <widget class="QLabel" name="label_3">
+                    <property name="font">
+                     <font>
+                      <family>Space Grotesk</family>
+                      <pointsize>13</pointsize>
+                     </font>
+                    </property>
                     <property name="text">
                      <string>Yangon Technology University</string>
                     </property>
@@ -1507,6 +1887,12 @@ p, li { white-space: pre-wrap; }
                   </item>
                   <item row="15" column="1">
                    <widget class="QPushButton" name="pushButton_16">
+                    <property name="font">
+                     <font>
+                      <family>Space Grotesk</family>
+                      <pointsize>13</pointsize>
+                     </font>
+                    </property>
                     <property name="text">
                      <string>Visit Link</string>
                     </property>
@@ -1514,6 +1900,12 @@ p, li { white-space: pre-wrap; }
                   </item>
                   <item row="24" column="0">
                    <widget class="QLabel" name="label_41">
+                    <property name="font">
+                     <font>
+                      <family>Space Grotesk</family>
+                      <pointsize>13</pointsize>
+                     </font>
+                    </property>
                     <property name="text">
                      <string>University of Medicine (Mandalay)</string>
                     </property>
@@ -1521,6 +1913,12 @@ p, li { white-space: pre-wrap; }
                   </item>
                   <item row="25" column="0">
                    <widget class="QLabel" name="label_42">
+                    <property name="font">
+                     <font>
+                      <family>Space Grotesk</family>
+                      <pointsize>13</pointsize>
+                     </font>
+                    </property>
                     <property name="text">
                      <string>University of Dental Medicine, Mandalay</string>
                     </property>
@@ -1528,6 +1926,12 @@ p, li { white-space: pre-wrap; }
                   </item>
                   <item row="27" column="0">
                    <widget class="QLabel" name="label_44">
+                    <property name="font">
+                     <font>
+                      <family>Space Grotesk</family>
+                      <pointsize>13</pointsize>
+                     </font>
+                    </property>
                     <property name="text">
                      <string>Lacquerware Technology College (Bagan)</string>
                     </property>
@@ -1535,6 +1939,12 @@ p, li { white-space: pre-wrap; }
                   </item>
                   <item row="27" column="1">
                    <widget class="QPushButton" name="pushButton_28">
+                    <property name="font">
+                     <font>
+                      <family>Space Grotesk</family>
+                      <pointsize>13</pointsize>
+                     </font>
+                    </property>
                     <property name="text">
                      <string>Visit Link</string>
                     </property>

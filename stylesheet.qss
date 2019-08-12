@@ -1,10 +1,10 @@
-#main, #stackedWidget, #homePage, #gridLayout_5, #scrollArea, #scag, QTextBrowser {
+#main, #stackedWidget, #homePage, #gridLayout_5, #scrollArea, #scrollArea_2, #scag, QTextBrowser {
     border: 0;
 }
 #centralWidget {
     background-color: #F2F2F2;
 }
-#stackedWidget, #homePage, #scrollArea, #scag {
+#stackedWidget, #homePage, #linksPage, #scrollArea, #scrollArea_2, #scrollAreaWidgetContents, #scag {
     background-color: #FFFFFF;
 }
 
@@ -14,6 +14,7 @@
     border: 0;
     border-radius: 10px;
     padding: 10px 15px;
+    margin: 0 20px;
 }
 #male_btn:pressed, #female_btn:pressed {
     background-color: #1976D2;
@@ -31,10 +32,60 @@
 #title_label1, #title_label2, #title_label3, #title_label4 {
     margin-left: 20px;
 }
-#gender_radio, #male_btn, #female_btn {
-    margin: 0 20px;
+#bio_btn, #eco_btn {
+    border: 1px solid #1976D2;
+    border-radius: 10px;
+    padding: 10px 20px;
+    background-color: #FFFFFF;
+    color: #1976D2;
+    margin: 50px 10px;
 }
-#gridLayout_6 > * {
-    font-family: "Space Grotesk", sans-serif;
-    font-size: 13px;
+#search_btn, #search_btn_eco {
+    border: 1px solid #1976D2;
+    border-radius: 10px;
+    padding: 10px 20px;
+    background-color: #1976D2;
+    color: #FFFFFF;
+}
+
+#gridLayout_15, #gridLayout_19, #main_listView, #main_listView_eco {
+    /** margin: 10px; */
+    border: 0;
+}
+QListView::item:selected{
+	border: 1px solid #2BB7F3;
+}
+QLineEdit {
+    border: 1px solid #1976D2;
+}
+
+#pushButton,
+#pushButton_2,
+#pushButton_3,
+#pushButton_4,
+#pushButton_5,
+#pushButton_6,
+#pushButton_7,
+#pushButton_8,
+#pushButton_9,
+#pushButton_10,
+#pushButton_11,
+#pushButton_12,
+#pushButton_13,
+#pushButton_14,
+#pushButton_15,
+#pushButton_16,
+#pushButton_17,
+#pushButton_18,
+#pushButton_19,
+#pushButton_20,
+#pushButton_21,
+#pushButton_22,
+#pushButton_23,
+#pushButton_24,
+#pushButton_25,
+#pushButton_26,
+#pushButton_27,
+#pushButton_28 {
+    border: 0;
 }
