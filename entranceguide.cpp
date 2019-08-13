@@ -100,9 +100,9 @@ void EntranceGuide::searchData(int k, int e)
 
        if(k >= lowerbound)
        {
-           madeList[mlc][0] = id;
-           if(k - lowerbound == 0) madeList[mlc][1] = 1;
-           else madeList[mlc][1] = (k - lowerbound > difference) ? 100 : ceil((double(k - lowerbound)/(double)difference)*100.0);
+           sortedList[mlc][0] = id;
+           if(k - lowerbound == 0) sortedList[mlc][1] = 1;
+           else sortedList[mlc][1] = (k - lowerbound > difference) ? 100 : ceil((double(k - lowerbound)/(double)difference)*100.0);
            mlc++;
        }
        success = true;
